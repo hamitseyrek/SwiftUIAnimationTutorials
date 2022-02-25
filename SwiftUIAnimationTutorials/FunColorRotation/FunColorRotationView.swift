@@ -50,11 +50,11 @@ struct ImagePicker: View{
                     .font(.title)
             }
         }
-        .frame(width: 300, height: 160)
         .pickerStyle(WheelPickerStyle())
-        .compositingGroup()
-        .clipped()
-        
+        .frame(width: 300, height: 150)
+        .background(Color.black.colorMultiply(.gray))
+        .cornerRadius(20)
+        .shadow(color: .gray, radius: 0.2, x: 0, y: 0)
     }
 }
 
