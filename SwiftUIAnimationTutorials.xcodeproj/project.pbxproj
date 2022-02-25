@@ -14,6 +14,7 @@
 		5E41628E27C805DE008B9352 /* RecordPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628D27C805DE008B9352 /* RecordPlayerView.swift */; };
 		5E41629027C80BF5008B9352 /* sevemedim.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5E41628F27C80BF4008B9352 /* sevemedim.m4a */; };
 		5E41629327C95474008B9352 /* FunColorRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41629227C95474008B9352 /* FunColorRotationView.swift */; };
+		5E41629627C964CC008B9352 /* BreathingFlowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41629527C964CC008B9352 /* BreathingFlowerView.swift */; };
 		5EE3D59F27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3D59E27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift */; };
 		5EE3D5A127C78E0800BCFDF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3D5A027C78E0800BCFDF8 /* ContentView.swift */; };
 		5EE3D5A327C78E0900BCFDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3D5A227C78E0900BCFDF8 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		5E41628D27C805DE008B9352 /* RecordPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerView.swift; sourceTree = "<group>"; };
 		5E41628F27C80BF4008B9352 /* sevemedim.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sevemedim.m4a; sourceTree = "<group>"; };
 		5E41629227C95474008B9352 /* FunColorRotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunColorRotationView.swift; sourceTree = "<group>"; };
+		5E41629527C964CC008B9352 /* BreathingFlowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingFlowerView.swift; sourceTree = "<group>"; };
 		5EE3D59B27C78E0800BCFDF8 /* SwiftUIAnimationTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAnimationTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE3D59E27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationTutorialsApp.swift; sourceTree = "<group>"; };
 		5EE3D5A027C78E0800BCFDF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			path = FunColorRotation;
 			sourceTree = "<group>";
 		};
+		5E41629427C964A7008B9352 /* BreathingFlower */ = {
+			isa = PBXGroup;
+			children = (
+				5E41629527C964CC008B9352 /* BreathingFlowerView.swift */,
+			);
+			path = BreathingFlower;
+			sourceTree = "<group>";
+		};
 		5EE3D59227C78E0800BCFDF8 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		5EE3D59D27C78E0800BCFDF8 /* SwiftUIAnimationTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				5E41629427C964A7008B9352 /* BreathingFlower */,
 				5E41629127C95406008B9352 /* FunColorRotation */,
 				5E41627F27C7FC16008B9352 /* RecordPlayer */,
 				5EE3D5AC27C78E1400BCFDF8 /* CircleAnimation */,
@@ -189,6 +200,7 @@
 				5E41628E27C805DE008B9352 /* RecordPlayerView.swift in Sources */,
 				5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */,
 				5E41628C27C8043B008B9352 /* ArmView.swift in Sources */,
+				5E41629627C964CC008B9352 /* BreathingFlowerView.swift in Sources */,
 				5E41629327C95474008B9352 /* FunColorRotationView.swift in Sources */,
 				5E41628527C802B4008B9352 /* PlaySound.swift in Sources */,
 				5E41628727C802F5008B9352 /* RecordView.swift in Sources */,
