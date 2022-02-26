@@ -16,6 +16,7 @@
 		5E41629327C95474008B9352 /* FunColorRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41629227C95474008B9352 /* FunColorRotationView.swift */; };
 		5E41629627C964CC008B9352 /* BreathingFlowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41629527C964CC008B9352 /* BreathingFlowerView.swift */; };
 		5E41629927C971D3008B9352 /* FlyingBirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41629827C971D3008B9352 /* FlyingBirdView.swift */; };
+		5EDC146F27CA29590080DA96 /* BubbleSpriteKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC146E27CA29590080DA96 /* BubbleSpriteKitView.swift */; };
 		5EE3D59F27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3D59E27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift */; };
 		5EE3D5A127C78E0800BCFDF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3D5A027C78E0800BCFDF8 /* ContentView.swift */; };
 		5EE3D5A327C78E0900BCFDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3D5A227C78E0900BCFDF8 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		5E41629227C95474008B9352 /* FunColorRotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunColorRotationView.swift; sourceTree = "<group>"; };
 		5E41629527C964CC008B9352 /* BreathingFlowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingFlowerView.swift; sourceTree = "<group>"; };
 		5E41629827C971D3008B9352 /* FlyingBirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingBirdView.swift; sourceTree = "<group>"; };
+		5EDC146E27CA29590080DA96 /* BubbleSpriteKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSpriteKitView.swift; sourceTree = "<group>"; };
 		5EE3D59B27C78E0800BCFDF8 /* SwiftUIAnimationTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAnimationTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE3D59E27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationTutorialsApp.swift; sourceTree = "<group>"; };
 		5EE3D5A027C78E0800BCFDF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 			path = FlyingBird;
 			sourceTree = "<group>";
 		};
+		5EDC146D27CA29400080DA96 /* BubbleSpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				5EDC146E27CA29590080DA96 /* BubbleSpriteKitView.swift */,
+			);
+			path = BubbleSpriteKit;
+			sourceTree = "<group>";
+		};
 		5EE3D59227C78E0800BCFDF8 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		5EE3D59D27C78E0800BCFDF8 /* SwiftUIAnimationTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				5EDC146D27CA29400080DA96 /* BubbleSpriteKit */,
 				5E41629727C971BB008B9352 /* FlyingBird */,
 				5E41629427C964A7008B9352 /* BreathingFlower */,
 				5E41629127C95406008B9352 /* FunColorRotation */,
@@ -218,6 +229,7 @@
 				5E41628727C802F5008B9352 /* RecordView.swift in Sources */,
 				5EE3D5AE27C78E4E00BCFDF8 /* CircleView.swift in Sources */,
 				5EE3D5A127C78E0800BCFDF8 /* ContentView.swift in Sources */,
+				5EDC146F27CA29590080DA96 /* BubbleSpriteKitView.swift in Sources */,
 				5EE3D59F27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
