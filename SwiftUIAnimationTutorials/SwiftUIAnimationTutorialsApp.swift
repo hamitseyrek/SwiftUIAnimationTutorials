@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIAnimationTutorialsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FlyPresentDismissTransitionView()
         }
     }
 }
