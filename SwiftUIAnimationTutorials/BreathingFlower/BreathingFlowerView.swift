@@ -31,7 +31,7 @@ struct BreathingFlowerView: View {
                     .opacity(breathInLabel ? 0 : 1)
                     .scaleEffect(breathInLabel ? 0 : 1)
                     .offset(y: -160)
-                    .animation(Animation.easeInOut(duration: 2).delay(2).repeatForever(autoreverses: true))
+                    .animation(Animation.easeInOut(duration: 2).delay(2).repeatForever(autoreverses: true), value: -160)
                 
                 Text("Breath Out")
                     .font(Font.custom("papyrus", size: 35))
@@ -39,7 +39,7 @@ struct BreathingFlowerView: View {
                     .opacity(breathOutLabel ? 0 : 1)
                     .scaleEffect(breathOutLabel ? 0 : 1)
                     .offset(y: -160)
-                    .animation(Animation.easeInOut(duration: 2).delay(2).repeatForever(autoreverses: true))
+                    .animation(Animation.easeInOut(duration: 2).delay(2).repeatForever(autoreverses: true), value: -160)
                 
                 VStack{
                     ZStack{
@@ -49,7 +49,7 @@ struct BreathingFlowerView: View {
                                 .resizable()
                                 .frame(width: 35, height: 125)
                                 .offset(y: breath ? 90 : 0)
-                                .animation(Animation.timingCurve(0.65, -2.6, 0.32, 0.4).delay(0.05).speed(0.1).repeatForever(autoreverses: true))
+                                .animation(Animation.timingCurve(0.65, -2.6, 0.32, 0.4).delay(0.05).speed(0.1).repeatForever(autoreverses: true), value: breath)
                         }
                         .blur(radius: diffuseOnExhale ? 1 : 60)
                         .offset(x: 0, y: diffuseOnExhale ? -50 : -100)
@@ -90,7 +90,7 @@ struct BreathingFlowerView: View {
                     }
                     .shadow(radius: showShadow ? 20 : 0)
                     .hueRotation(Angle(degrees: showShadow ? 0 : 180))
-                    .animation(Animation.easeInOut(duration: 2).delay(2).repeatForever(autoreverses: true))
+                    .animation(Animation.easeInOut(duration: 2).delay(2).repeatForever(autoreverses: true), value: showShadow)
                 }
             }.offset(y: -100)
             
@@ -116,7 +116,7 @@ struct Petal: View {
             .resizable()
             .frame(width: 75, height: 125)
             .rotationEffect(.degrees(petal ? degrees : degrees), anchor: .bottom)
-            .animation(Animation.easeInOut(duration: 2).delay(2).repeatForever(autoreverses: true))
+            .animation(Animation.easeInOut(duration: 2).delay(2).repeatForever(autoreverses: true), value: petal)
     }
 }
 

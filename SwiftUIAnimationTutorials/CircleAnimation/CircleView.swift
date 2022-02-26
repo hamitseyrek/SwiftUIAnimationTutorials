@@ -57,7 +57,7 @@ struct CircleView: View {
             }
             .rotationEffect(.degrees(rotateInOut ? 90 : 0))
             .scaleEffect(scaleInOut ? 1 : 1/4)
-            .animation(Animation.easeInOut.repeatForever(autoreverses: true).speed(1/8))
+            .animation(Animation.easeInOut.repeatForever(autoreverses: true).speed(1/8), value: scaleInOut)
             .onAppear {
                 moveInOut.toggle()
                 scaleInOut.toggle()

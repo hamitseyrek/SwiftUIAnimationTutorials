@@ -18,7 +18,7 @@ struct RecordView: View {
             .frame(width: 275, height: 275)
             .shadow(color: .gray, radius: 1, x: 0, y: 0)
             .rotationEffect(Angle.degrees(degrees))
-            .animation(Animation.linear(duration: shouldAnimate ? 60 : 0).delay(1.7))
+            .animation(Animation.linear(duration: shouldAnimate ? 60 : 0).delay(1.7), value: degrees)
     }
 }
 

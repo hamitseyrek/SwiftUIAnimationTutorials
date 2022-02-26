@@ -25,7 +25,7 @@ struct FlyingBirdView: View {
                 .foregroundColor(.white)
                 .offset(y: -250)
                 .scaleEffect(animateText ? 1.1 : 1.0)
-                .animation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true))
+                .animation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true), value: animateText ? 1.1 : 1.0)
             
             ZStack{
                 
@@ -34,14 +34,14 @@ struct FlyingBirdView: View {
                     .shadow(color: .red, radius: 1, x: 0, y: 3)
                     .rotationEffect(.degrees(leftWing ? -100 : 0), anchor: .bottomTrailing)
                     .offset(x: -55, y: leftWing ? -190 : 0)
-                    .animation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true))
+                    .animation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true), value: leftWing ? -190 : 0)
                 
                 //MARK: - RIGHT WING
                 Image("rightWing").resizable().frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .shadow(color: .blue, radius: 1, x: 0, y: 3)
                     .rotationEffect(.degrees(rightWing ? 100 : 0), anchor: .bottomLeading)
                     .offset(x: 55, y: rightWing ? -190 : 0)
-                    .animation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true))
+                    .animation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true), value: rightWing ? -190 : 0)
                 
                 //MARK: - BODY
                 Image("body").resizable()
@@ -49,10 +49,10 @@ struct FlyingBirdView: View {
                     .offset(y: -30)
                     .shadow(color: .white, radius: 1, x: 0, y: 0)
                     .offset(y: birdBody ? -50 : 75)
-                    .animation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true))
+                    .animation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true), value: birdBody ? -50 : 75)
             }
             .shadow(color: .white, radius: animateShadow ? 1 : 4, x: 0, y: animateShadow ? 10 : 1)
-            .animation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true))
+            .animation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true), value: animateShadow ? 10 : 1)
             .onAppear(perform: {
                 leftWing.toggle()
                 rightWing.toggle()

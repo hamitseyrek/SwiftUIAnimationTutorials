@@ -19,7 +19,7 @@ struct ArmView: View {
             .shadow(color: .gray, radius: 2, x: 0, y: 0)
             .rotationEffect(Angle.degrees(-35), anchor: .topTrailing)
             .rotationEffect(Angle.degrees(rotateArm ? 8 : 0), anchor: .topTrailing)
-            .animation(Animation.linear(duration: 2))
+            .animation(Animation.linear(duration: 2), value: rotateArm)
             .offset(x: 70, y: -250)
     }
 }

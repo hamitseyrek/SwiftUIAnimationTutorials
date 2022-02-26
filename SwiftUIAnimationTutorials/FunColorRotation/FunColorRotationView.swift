@@ -25,7 +25,7 @@ struct FunColorRotationView: View {
                     .padding(20)
                     .frame(width: 350, height: 350)
                     .hueRotation(.degrees(self.shiftColors ? 360 * 2 : 0))
-                    .animation(Animation.easeInOut(duration: 2).delay(0.4).repeatForever(autoreverses: true))
+                    .animation(Animation.easeInOut(duration: 2).delay(0.4).repeatForever(autoreverses: true), value: self.shiftColors)
                     .onAppear{
                         self.shiftColors.toggle()
                     }

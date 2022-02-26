@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HugeRotationView: View {
-    @State private var hueRotation = false
+    @State private var hugeRotation = false
         var backgrounds = ["img1", "img2", "img3", "img4", "img5", "img6", "img7", "img8", "img9", "img10", "img11", "img12", "img13"].shuffled()
         
         var body: some View {
@@ -22,10 +22,10 @@ struct HugeRotationView: View {
                             .clipped()
                     }
                 }
-                .hueRotation(.degrees(hueRotation ? 10 : 500))
-                .animation(Animation.easeInOut(duration: 5).repeatForever(autoreverses: true))
+                .hueRotation(.degrees(hugeRotation ? 10 : 500))
+                .animation(Animation.easeInOut(duration: 5).repeatForever(autoreverses: true), value: hugeRotation)
                 .onAppear() {
-                    hueRotation.toggle()
+                    hugeRotation.toggle()
                 }
             }.edgesIgnoringSafeArea(.all)
         }
@@ -49,7 +49,7 @@ struct HugeRotationView: View {
                         contentContainer
                     }.frame(width: geo.size.width, height: geo.size.height, alignment: .leading)
                     .offset(x: CGFloat(self.workingIndex) * -geo.size.width, y: 0)
-                    .animation(.easeInOut)
+                    .animation(.easeInOut, value: 0)
                     .onReceive(timer) { _ in
                         workingIndex = (workingIndex + 1) % (imageCount == 0 ? 1 : imageCount)
                     }
@@ -62,7 +62,7 @@ struct HugeRotationView: View {
                                 .foregroundColor(index == workingIndex ? .white : .gray)
                                 .overlay(Circle().stroke(Color.black, lineWidth: 1))
                                 .padding(.bottom, 20)
-                                .animation(.easeInOut)
+                                .animation(.easeInOut, value: workingIndex)
                         }
                     }
                 }
