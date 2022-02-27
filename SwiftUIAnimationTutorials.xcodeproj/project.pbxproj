@@ -25,6 +25,7 @@
 		5EE3D5A327C78E0900BCFDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3D5A227C78E0900BCFDF8 /* Assets.xcassets */; };
 		5EE3D5A627C78E0900BCFDF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3D5A527C78E0900BCFDF8 /* Preview Assets.xcassets */; };
 		5EE3D5AE27C78E4E00BCFDF8 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3D5AD27C78E4E00BCFDF8 /* CircleView.swift */; };
+		5EF2840B27CB63A300901443 /* ParallaxEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2840A27CB63A300901443 /* ParallaxEffectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		5EE3D5A227C78E0900BCFDF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EE3D5A527C78E0900BCFDF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5EE3D5AD27C78E4E00BCFDF8 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		5EF2840A27CB63A300901443 /* ParallaxEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		5EE3D59D27C78E0800BCFDF8 /* SwiftUIAnimationTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				5EF2840927CB638200901443 /* ParallaxEffext */,
 				5EDC147327CABE5C0080DA96 /* FlyPresentDismissTransition */,
 				5EDC147027CA39660080DA96 /* HugeRotation */,
 				5EDC146D27CA29400080DA96 /* BubbleSpriteKit */,
@@ -171,6 +174,14 @@
 				5EE3D5AD27C78E4E00BCFDF8 /* CircleView.swift */,
 			);
 			path = CircleAnimation;
+			sourceTree = "<group>";
+		};
+		5EF2840927CB638200901443 /* ParallaxEffext */ = {
+			isa = PBXGroup;
+			children = (
+				5EF2840A27CB63A300901443 /* ParallaxEffectView.swift */,
+			);
+			path = ParallaxEffext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF2840B27CB63A300901443 /* ParallaxEffectView.swift in Sources */,
 				5EDC147727CABF010080DA96 /* SettingsView.swift in Sources */,
 				5E41628E27C805DE008B9352 /* RecordPlayerView.swift in Sources */,
 				5E41629927C971D3008B9352 /* FlyingBirdView.swift in Sources */,
