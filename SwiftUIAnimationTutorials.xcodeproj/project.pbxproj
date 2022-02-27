@@ -26,6 +26,11 @@
 		5EE3D5A627C78E0900BCFDF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3D5A527C78E0900BCFDF8 /* Preview Assets.xcassets */; };
 		5EE3D5AE27C78E4E00BCFDF8 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3D5AD27C78E4E00BCFDF8 /* CircleView.swift */; };
 		5EF2840B27CB63A300901443 /* ParallaxEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2840A27CB63A300901443 /* ParallaxEffectView.swift */; };
+		5EF2840E27CB6D6F00901443 /* ElevatorAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2840D27CB6D6F00901443 /* ElevatorAppView.swift */; };
+		5EF2841127CB6DB700901443 /* elevatorChime.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5EF2840F27CB6DB700901443 /* elevatorChime.m4a */; };
+		5EF2841227CB6DB700901443 /* doorsOpenClose.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5EF2841027CB6DB700901443 /* doorsOpenClose.m4a */; };
+		5EF2841427CB74AA00901443 /*  FrameAndDoorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2841327CB74AA00901443 /*  FrameAndDoorsView.swift */; };
+		5EF2841627CB78CA00901443 /* ElevatorPlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2841527CB78CA00901443 /* ElevatorPlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +54,11 @@
 		5EE3D5A527C78E0900BCFDF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5EE3D5AD27C78E4E00BCFDF8 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		5EF2840A27CB63A300901443 /* ParallaxEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxEffectView.swift; sourceTree = "<group>"; };
+		5EF2840D27CB6D6F00901443 /* ElevatorAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorAppView.swift; sourceTree = "<group>"; };
+		5EF2840F27CB6DB700901443 /* elevatorChime.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = elevatorChime.m4a; sourceTree = "<group>"; };
+		5EF2841027CB6DB700901443 /* doorsOpenClose.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = doorsOpenClose.m4a; sourceTree = "<group>"; };
+		5EF2841327CB74AA00901443 /*  FrameAndDoorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " FrameAndDoorsView.swift"; sourceTree = "<group>"; };
+		5EF2841527CB78CA00901443 /* ElevatorPlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorPlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +153,7 @@
 		5EE3D59D27C78E0800BCFDF8 /* SwiftUIAnimationTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				5EF2840C27CB6D5900901443 /* ElevatorApp */,
 				5EF2840927CB638200901443 /* ParallaxEffext */,
 				5EDC147327CABE5C0080DA96 /* FlyPresentDismissTransition */,
 				5EDC147027CA39660080DA96 /* HugeRotation */,
@@ -182,6 +193,18 @@
 				5EF2840A27CB63A300901443 /* ParallaxEffectView.swift */,
 			);
 			path = ParallaxEffext;
+			sourceTree = "<group>";
+		};
+		5EF2840C27CB6D5900901443 /* ElevatorApp */ = {
+			isa = PBXGroup;
+			children = (
+				5EF2841027CB6DB700901443 /* doorsOpenClose.m4a */,
+				5EF2840F27CB6DB700901443 /* elevatorChime.m4a */,
+				5EF2840D27CB6D6F00901443 /* ElevatorAppView.swift */,
+				5EF2841327CB74AA00901443 /*  FrameAndDoorsView.swift */,
+				5EF2841527CB78CA00901443 /* ElevatorPlaySound.swift */,
+			);
+			path = ElevatorApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E41629027C80BF5008B9352 /* sevemedim.m4a in Resources */,
+				5EF2841127CB6DB700901443 /* elevatorChime.m4a in Resources */,
 				5EE3D5A627C78E0900BCFDF8 /* Preview Assets.xcassets in Resources */,
+				5EF2841227CB6DB700901443 /* doorsOpenClose.m4a in Resources */,
 				5EE3D5A327C78E0900BCFDF8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF2841627CB78CA00901443 /* ElevatorPlaySound.swift in Sources */,
 				5EF2840B27CB63A300901443 /* ParallaxEffectView.swift in Sources */,
 				5EDC147727CABF010080DA96 /* SettingsView.swift in Sources */,
 				5E41628E27C805DE008B9352 /* RecordPlayerView.swift in Sources */,
+				5EF2840E27CB6D6F00901443 /* ElevatorAppView.swift in Sources */,
 				5E41629927C971D3008B9352 /* FlyingBirdView.swift in Sources */,
 				5EDC147527CABE860080DA96 /* FlyPresentDismissTransitionView.swift in Sources */,
 				5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */,
@@ -267,6 +294,7 @@
 				5E41628527C802B4008B9352 /* PlaySound.swift in Sources */,
 				5E41628727C802F5008B9352 /* RecordView.swift in Sources */,
 				5EE3D5AE27C78E4E00BCFDF8 /* CircleView.swift in Sources */,
+				5EF2841427CB74AA00901443 /*  FrameAndDoorsView.swift in Sources */,
 				5EE3D5A127C78E0800BCFDF8 /* ContentView.swift in Sources */,
 				5EDC147227CA39B00080DA96 /* HugeRotationView.swift in Sources */,
 				5EDC146F27CA29590080DA96 /* BubbleSpriteKitView.swift in Sources */,
