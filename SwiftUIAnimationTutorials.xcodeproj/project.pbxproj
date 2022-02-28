@@ -31,6 +31,7 @@
 		5EF2841227CB6DB700901443 /* doorsOpenClose.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5EF2841027CB6DB700901443 /* doorsOpenClose.m4a */; };
 		5EF2841427CB74AA00901443 /*  FrameAndDoorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2841327CB74AA00901443 /*  FrameAndDoorsView.swift */; };
 		5EF2841627CB78CA00901443 /* ElevatorPlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2841527CB78CA00901443 /* ElevatorPlaySound.swift */; };
+		5EF2841927CCD1F200901443 /* SwingingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2841827CCD1F200901443 /* SwingingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		5EF2841027CB6DB700901443 /* doorsOpenClose.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = doorsOpenClose.m4a; sourceTree = "<group>"; };
 		5EF2841327CB74AA00901443 /*  FrameAndDoorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " FrameAndDoorsView.swift"; sourceTree = "<group>"; };
 		5EF2841527CB78CA00901443 /* ElevatorPlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorPlaySound.swift; sourceTree = "<group>"; };
+		5EF2841827CCD1F200901443 /* SwingingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwingingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		5EE3D59D27C78E0800BCFDF8 /* SwiftUIAnimationTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				5EF2841727CCD1D700901443 /* Swinging */,
 				5EF2840C27CB6D5900901443 /* ElevatorApp */,
 				5EF2840927CB638200901443 /* ParallaxEffext */,
 				5EDC147327CABE5C0080DA96 /* FlyPresentDismissTransition */,
@@ -205,6 +208,14 @@
 				5EF2841527CB78CA00901443 /* ElevatorPlaySound.swift */,
 			);
 			path = ElevatorApp;
+			sourceTree = "<group>";
+		};
+		5EF2841727CCD1D700901443 /* Swinging */ = {
+			isa = PBXGroup;
+			children = (
+				5EF2841827CCD1F200901443 /* SwingingView.swift */,
+			);
+			path = Swinging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 				5E41628527C802B4008B9352 /* PlaySound.swift in Sources */,
 				5E41628727C802F5008B9352 /* RecordView.swift in Sources */,
 				5EE3D5AE27C78E4E00BCFDF8 /* CircleView.swift in Sources */,
+				5EF2841927CCD1F200901443 /* SwingingView.swift in Sources */,
 				5EF2841427CB74AA00901443 /*  FrameAndDoorsView.swift in Sources */,
 				5EE3D5A127C78E0800BCFDF8 /* ContentView.swift in Sources */,
 				5EDC147227CA39B00080DA96 /* HugeRotationView.swift in Sources */,
