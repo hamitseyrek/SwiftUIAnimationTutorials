@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SunMoonToggleStyle
 
 struct WeatherGraphAnimationView: View {
     
@@ -32,13 +33,43 @@ struct WeatherGraphAnimationView: View {
     
     var body: some View {
         ZStack {
-            Color(.sRGB, red: 255/255, green: 195/255, blue: 0/255, opacity: 1).edgesIgnoringSafeArea(.all)
+            Color(.sRGB, red: isOn ? 255/255 : 0/255, green: 195/255, blue: 0/255, opacity: 1).edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                    SunMoonToggleView(isOn: $isOn)
+                
             VStack {
                 Text("Weather App").font(.title2).font(.system(size: 40)).fontWeight(.medium)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                 
                 PickerView(pickerSelection: $pickerSelection)
-                
+                    .onReceive([pickerSelection].publisher.first()) { value in
+                        if value == 0 {
+                            animateTemp = true
+                            animateWind = false
+                            animatePrecip = false
+                            
+                            animateTempImage = true
+                            animateWindImage = false
+                            animatePrecipImage = false
+                        } else if value == 1 {
+                            animateTemp = false
+                            animateWind = false
+                            animatePrecip = true
+                            
+                            animateTempImage = false
+                            animateWindImage = false
+                            animatePrecipImage = true
+                        } else {
+                            animateTemp = false
+                            animateWind = true
+                            animatePrecip = false
+                            
+                            animateTempImage = false
+                            animateWindImage = true
+                            animatePrecipImage = false
+                        }
+                    }
                 
                 ZStack {
                     HStack(spacing: 20) {
@@ -50,7 +81,7 @@ struct WeatherGraphAnimationView: View {
                         WeeklyGraph(dayHeightData: dataArray[pickerSelection][5], width: 350 / capsuleWidth)
                         WeeklyGraph(dayHeightData: dataArray[pickerSelection][6], width: 350 / capsuleWidth)
                     }
-                    .animation(.spring(response: 0.9, dampingFraction: 0.6))
+                    .animation(.spring(response: 0.9, dampingFraction: 0.6), value: pickerSelection)
                     
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(lineWidth: 1).shadow(color: Color.black, radius: 8, x: 3, y: 3)
@@ -60,15 +91,15 @@ struct WeatherGraphAnimationView: View {
                 GeometryReader { geo in
                     VStack {
                         if animateTemp {
-                            Text("Temperature").fontWeight(.medium).font(.title).shadow(color: .black, radius: 1, x: 0, y: 2).transition(AnyTransition.offset(x: 300)).animation(Animation.easeOut(duration: 1.0), value: animateTemp)
+                            Text("Temperature").fontWeight(.medium).font(.title).shadow(color: .black, radius: 1, x: 0, y: 2).transition(AnyTransition.offset(x: 300)).animation(Animation.easeOut(duration: 1.0))
                         }
                         
                         if animatePrecip {
-                            Text("Precipitation").fontWeight(.medium).font(.title).shadow(color: .black, radius: 1, x: 0, y: 2).transition(AnyTransition.offset(x: -300)).animation(Animation.easeOut(duration: 1.0), value: animatePrecip)
+                            Text("Precipitation").fontWeight(.medium).font(.title).shadow(color: .black, radius: 1, x: 0, y: 2).transition(AnyTransition.offset(x: -300)).animation(Animation.easeOut(duration: 1.0))
                         }
                         
                         if animateWind {
-                            Text("Wind").fontWeight(.medium).font(.title).shadow(color: .black, radius: 1, x: 0, y: 2).transition(AnyTransition.offset(x: 300)).animation(Animation.easeOut(duration: 1.0), value: animateWind)
+                            Text("Wind").fontWeight(.medium).font(.title).shadow(color: .black, radius: 1, x: 0, y: 2).transition(AnyTransition.offset(x: 300)).animation(Animation.easeOut(duration: 1.0))
                         }
                     }.position(x: geo.size.width * 0.5, y: geo.size.height * 0.2)
                     
@@ -77,21 +108,21 @@ struct WeatherGraphAnimationView: View {
                             Image("tempImage").resizable().aspectRatio(contentMode: .fit)
                                 .frame(width: geo.size.width / 2, height: geo.size.height / 2)
                                 .position(y: geo.size.height / 2).transition(AnyTransition.offset(y: 300))
-                                .animation(Animation.easeOut(duration: 1.0), value: animateTempImage)
+                                .animation(Animation.easeOut(duration: 1.0))
                         }
                         
                         if animatePrecipImage {
                             Image("precip").resizable().aspectRatio(contentMode: .fit)
                                 .frame(width: geo.size.width / 2, height: geo.size.height / 2)
                                 .position(y: geo.size.height / 2).transition(AnyTransition.offset(x: 300))
-                                .animation(Animation.easeOut(duration: 1.0), value: animatePrecipImage)
+                                .animation(Animation.easeOut(duration: 1.0))
                         }
                         
                         if animateWindImage {
                             Image("wind").resizable().aspectRatio(contentMode: .fit)
                                 .frame(width: geo.size.width / 2, height: geo.size.height / 2)
                                 .position(y: geo.size.height / 2).transition(AnyTransition.offset(x: -300))
-                                .animation(Animation.easeOut(duration: 1.0), value: animateWindImage)
+                                .animation(Animation.easeOut(duration: 1.0))
                         }
                     }.position(x: geo.size.width, y: geo.size.height * 0.6)
                 }
@@ -99,7 +130,7 @@ struct WeatherGraphAnimationView: View {
         }
     }
 }
-
+}
 
 
 struct WeeklyGraph: View {
