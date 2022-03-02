@@ -13,6 +13,8 @@
 		5E1B791C27CE974A00A9478D /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B791B27CE974A00A9478D /* PickerView.swift */; };
 		5E1B791F27CF7A2E00A9478D /* SunMoonToggleStyle in Frameworks */ = {isa = PBXBuildFile; productRef = 5E1B791E27CF7A2E00A9478D /* SunMoonToggleStyle */; };
 		5E1B792127CF7AA900A9478D /* SunMoonToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792027CF7AA900A9478D /* SunMoonToggleView.swift */; };
+		5E1B792427CF7E6800A9478D /* GearsAndBeltsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792327CF7E6800A9478D /* GearsAndBeltsView.swift */; };
+		5E1B792627CFD16A00A9478D /* GierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792527CFD16A00A9478D /* GierView.swift */; };
 		5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */; };
 		5E41628527C802B4008B9352 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628427C802B4008B9352 /* PlaySound.swift */; };
 		5E41628727C802F5008B9352 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628627C802F5008B9352 /* RecordView.swift */; };
@@ -46,6 +48,8 @@
 		5E1B791927CE955400A9478D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		5E1B791B27CE974A00A9478D /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		5E1B792027CF7AA900A9478D /* SunMoonToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunMoonToggleView.swift; sourceTree = "<group>"; };
+		5E1B792327CF7E6800A9478D /* GearsAndBeltsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearsAndBeltsView.swift; sourceTree = "<group>"; };
+		5E1B792527CFD16A00A9478D /* GierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GierView.swift; sourceTree = "<group>"; };
 		5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerBox.swift; sourceTree = "<group>"; };
 		5E41628427C802B4008B9352 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		5E41628627C802F5008B9352 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
@@ -103,6 +107,15 @@
 				5E1B792027CF7AA900A9478D /* SunMoonToggleView.swift */,
 			);
 			path = WeatherGraphAnimation;
+			sourceTree = "<group>";
+		};
+		5E1B792227CF7E2E00A9478D /* GearsAndBelts */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B792327CF7E6800A9478D /* GearsAndBeltsView.swift */,
+				5E1B792527CFD16A00A9478D /* GierView.swift */,
+			);
+			path = GearsAndBelts;
 			sourceTree = "<group>";
 		};
 		5E41627F27C7FC16008B9352 /* RecordPlayer */ = {
@@ -186,6 +199,7 @@
 		5EE3D59D27C78E0800BCFDF8 /* SwiftUIAnimationTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				5E1B792227CF7E2E00A9478D /* GearsAndBelts */,
 				5E1B791627CE941F00A9478D /* WeatherGraphAnimation */,
 				5E1B791327CE18E900A9478D /* TwinklingStars */,
 				5EF2841727CCD1D700901443 /* Swinging */,
@@ -334,6 +348,7 @@
 				5EF2841627CB78CA00901443 /* ElevatorPlaySound.swift in Sources */,
 				5E1B792127CF7AA900A9478D /* SunMoonToggleView.swift in Sources */,
 				5EF2840B27CB63A300901443 /* ParallaxEffectView.swift in Sources */,
+				5E1B792427CF7E6800A9478D /* GearsAndBeltsView.swift in Sources */,
 				5EDC147727CABF010080DA96 /* SettingsView.swift in Sources */,
 				5E41628E27C805DE008B9352 /* RecordPlayerView.swift in Sources */,
 				5EF2840E27CB6D6F00901443 /* ElevatorAppView.swift in Sources */,
@@ -343,6 +358,7 @@
 				5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */,
 				5E41628C27C8043B008B9352 /* ArmView.swift in Sources */,
 				5E41629627C964CC008B9352 /* BreathingFlowerView.swift in Sources */,
+				5E1B792627CFD16A00A9478D /* GierView.swift in Sources */,
 				5E41629327C95474008B9352 /* FunColorRotationView.swift in Sources */,
 				5E41628527C802B4008B9352 /* PlaySound.swift in Sources */,
 				5E41628727C802F5008B9352 /* RecordView.swift in Sources */,
