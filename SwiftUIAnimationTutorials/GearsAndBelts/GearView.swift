@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GierView: View {
+struct GearView: View {
     @State private var rotateGear = false
     var gearImage: String = "singleGear"
     var gearWidth: CGFloat = 0.0
@@ -36,6 +36,6 @@ struct GierView: View {
 
 struct GierView_Previews: PreviewProvider {
     static var previews: some View {
-        GierView(gearImage: "singleGear", gearWidth: 100, gearDegrees: 360, offsetGearX: 0, offsetGearY: 0, rotateDegrees: 0, duration: 5, xAxis: 0.0, yAxis: 0.0, zAxis: 0.0)
+        GearView(gearImage: "singleGear", gearWidth: 100, gearDegrees: 360, offsetGearX: 0, offsetGearY: 0, rotateDegrees: 0, duration: 5, xAxis: 0.0, yAxis: 0.0, zAxis: 0.0)
     }
 }

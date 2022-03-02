@@ -14,7 +14,7 @@
 		5E1B791F27CF7A2E00A9478D /* SunMoonToggleStyle in Frameworks */ = {isa = PBXBuildFile; productRef = 5E1B791E27CF7A2E00A9478D /* SunMoonToggleStyle */; };
 		5E1B792127CF7AA900A9478D /* SunMoonToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792027CF7AA900A9478D /* SunMoonToggleView.swift */; };
 		5E1B792427CF7E6800A9478D /* GearsAndBeltsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792327CF7E6800A9478D /* GearsAndBeltsView.swift */; };
-		5E1B792627CFD16A00A9478D /* GierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792527CFD16A00A9478D /* GierView.swift */; };
+		5E1B792627CFD16A00A9478D /* GearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792527CFD16A00A9478D /* GearView.swift */; };
 		5E1B792827CFD53400A9478D /* BeltView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792727CFD53400A9478D /* BeltView.swift */; };
 		5E1B792A27CFD60D00A9478D /* WormGearsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792927CFD60D00A9478D /* WormGearsView.swift */; };
 		5E1B792C27CFDAA700A9478D /* ShaftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792B27CFDAA700A9478D /* ShaftView.swift */; };
@@ -53,7 +53,7 @@
 		5E1B791B27CE974A00A9478D /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		5E1B792027CF7AA900A9478D /* SunMoonToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunMoonToggleView.swift; sourceTree = "<group>"; };
 		5E1B792327CF7E6800A9478D /* GearsAndBeltsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearsAndBeltsView.swift; sourceTree = "<group>"; };
-		5E1B792527CFD16A00A9478D /* GierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GierView.swift; sourceTree = "<group>"; };
+		5E1B792527CFD16A00A9478D /* GearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearView.swift; sourceTree = "<group>"; };
 		5E1B792727CFD53400A9478D /* BeltView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeltView.swift; sourceTree = "<group>"; };
 		5E1B792927CFD60D00A9478D /* WormGearsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WormGearsView.swift; sourceTree = "<group>"; };
 		5E1B792B27CFDAA700A9478D /* ShaftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaftView.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				5E1B792327CF7E6800A9478D /* GearsAndBeltsView.swift */,
-				5E1B792527CFD16A00A9478D /* GierView.swift */,
+				5E1B792527CFD16A00A9478D /* GearView.swift */,
 				5E1B792B27CFDAA700A9478D /* ShaftView.swift */,
 				5E1B792927CFD60D00A9478D /* WormGearsView.swift */,
 				5E1B792D27CFDAFC00A9478D /* FanView.swift */,
@@ -372,7 +372,7 @@
 				5E41628C27C8043B008B9352 /* ArmView.swift in Sources */,
 				5E1B792E27CFDAFC00A9478D /* FanView.swift in Sources */,
 				5E41629627C964CC008B9352 /* BreathingFlowerView.swift in Sources */,
-				5E1B792627CFD16A00A9478D /* GierView.swift in Sources */,
+				5E1B792627CFD16A00A9478D /* GearView.swift in Sources */,
 				5E41629327C95474008B9352 /* FunColorRotationView.swift in Sources */,
 				5E41628527C802B4008B9352 /* PlaySound.swift in Sources */,
 				5E41628727C802F5008B9352 /* RecordView.swift in Sources */,
