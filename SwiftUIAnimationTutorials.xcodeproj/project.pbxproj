@@ -15,6 +15,7 @@
 		5E1B792127CF7AA900A9478D /* SunMoonToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792027CF7AA900A9478D /* SunMoonToggleView.swift */; };
 		5E1B792427CF7E6800A9478D /* GearsAndBeltsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792327CF7E6800A9478D /* GearsAndBeltsView.swift */; };
 		5E1B792627CFD16A00A9478D /* GierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792527CFD16A00A9478D /* GierView.swift */; };
+		5E1B792827CFD53400A9478D /* BeltView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792727CFD53400A9478D /* BeltView.swift */; };
 		5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */; };
 		5E41628527C802B4008B9352 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628427C802B4008B9352 /* PlaySound.swift */; };
 		5E41628727C802F5008B9352 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628627C802F5008B9352 /* RecordView.swift */; };
@@ -50,6 +51,7 @@
 		5E1B792027CF7AA900A9478D /* SunMoonToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunMoonToggleView.swift; sourceTree = "<group>"; };
 		5E1B792327CF7E6800A9478D /* GearsAndBeltsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearsAndBeltsView.swift; sourceTree = "<group>"; };
 		5E1B792527CFD16A00A9478D /* GierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GierView.swift; sourceTree = "<group>"; };
+		5E1B792727CFD53400A9478D /* BeltView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeltView.swift; sourceTree = "<group>"; };
 		5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerBox.swift; sourceTree = "<group>"; };
 		5E41628427C802B4008B9352 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		5E41628627C802F5008B9352 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				5E1B792327CF7E6800A9478D /* GearsAndBeltsView.swift */,
 				5E1B792527CFD16A00A9478D /* GierView.swift */,
+				5E1B792727CFD53400A9478D /* BeltView.swift */,
 			);
 			path = GearsAndBelts;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				5E41629927C971D3008B9352 /* FlyingBirdView.swift in Sources */,
 				5E1B791827CE944300A9478D /* WeatherGraphAnimationView.swift in Sources */,
 				5EDC147527CABE860080DA96 /* FlyPresentDismissTransitionView.swift in Sources */,
+				5E1B792827CFD53400A9478D /* BeltView.swift in Sources */,
 				5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */,
 				5E41628C27C8043B008B9352 /* ArmView.swift in Sources */,
 				5E41629627C964CC008B9352 /* BreathingFlowerView.swift in Sources */,
