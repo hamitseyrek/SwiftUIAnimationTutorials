@@ -16,6 +16,9 @@
 		5E1B792427CF7E6800A9478D /* GearsAndBeltsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792327CF7E6800A9478D /* GearsAndBeltsView.swift */; };
 		5E1B792627CFD16A00A9478D /* GierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792527CFD16A00A9478D /* GierView.swift */; };
 		5E1B792827CFD53400A9478D /* BeltView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792727CFD53400A9478D /* BeltView.swift */; };
+		5E1B792A27CFD60D00A9478D /* WormGearsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792927CFD60D00A9478D /* WormGearsView.swift */; };
+		5E1B792C27CFDAA700A9478D /* ShaftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792B27CFDAA700A9478D /* ShaftView.swift */; };
+		5E1B792E27CFDAFC00A9478D /* FanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B792D27CFDAFC00A9478D /* FanView.swift */; };
 		5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */; };
 		5E41628527C802B4008B9352 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628427C802B4008B9352 /* PlaySound.swift */; };
 		5E41628727C802F5008B9352 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628627C802F5008B9352 /* RecordView.swift */; };
@@ -52,6 +55,9 @@
 		5E1B792327CF7E6800A9478D /* GearsAndBeltsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearsAndBeltsView.swift; sourceTree = "<group>"; };
 		5E1B792527CFD16A00A9478D /* GierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GierView.swift; sourceTree = "<group>"; };
 		5E1B792727CFD53400A9478D /* BeltView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeltView.swift; sourceTree = "<group>"; };
+		5E1B792927CFD60D00A9478D /* WormGearsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WormGearsView.swift; sourceTree = "<group>"; };
+		5E1B792B27CFDAA700A9478D /* ShaftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaftView.swift; sourceTree = "<group>"; };
+		5E1B792D27CFDAFC00A9478D /* FanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanView.swift; sourceTree = "<group>"; };
 		5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerBox.swift; sourceTree = "<group>"; };
 		5E41628427C802B4008B9352 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		5E41628627C802F5008B9352 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
@@ -116,6 +122,9 @@
 			children = (
 				5E1B792327CF7E6800A9478D /* GearsAndBeltsView.swift */,
 				5E1B792527CFD16A00A9478D /* GierView.swift */,
+				5E1B792B27CFDAA700A9478D /* ShaftView.swift */,
+				5E1B792927CFD60D00A9478D /* WormGearsView.swift */,
+				5E1B792D27CFDAFC00A9478D /* FanView.swift */,
 				5E1B792727CFD53400A9478D /* BeltView.swift */,
 			);
 			path = GearsAndBelts;
@@ -361,6 +370,7 @@
 				5E1B792827CFD53400A9478D /* BeltView.swift in Sources */,
 				5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */,
 				5E41628C27C8043B008B9352 /* ArmView.swift in Sources */,
+				5E1B792E27CFDAFC00A9478D /* FanView.swift in Sources */,
 				5E41629627C964CC008B9352 /* BreathingFlowerView.swift in Sources */,
 				5E1B792627CFD16A00A9478D /* GierView.swift in Sources */,
 				5E41629327C95474008B9352 /* FunColorRotationView.swift in Sources */,
@@ -370,9 +380,11 @@
 				5EF2841927CCD1F200901443 /* SwingingView.swift in Sources */,
 				5EF2841427CB74AA00901443 /*  FrameAndDoorsView.swift in Sources */,
 				5EE3D5A127C78E0800BCFDF8 /* ContentView.swift in Sources */,
+				5E1B792C27CFDAA700A9478D /* ShaftView.swift in Sources */,
 				5EDC147227CA39B00080DA96 /* HugeRotationView.swift in Sources */,
 				5E1B791C27CE974A00A9478D /* PickerView.swift in Sources */,
 				5EDC146F27CA29590080DA96 /* BubbleSpriteKitView.swift in Sources */,
+				5E1B792A27CFD60D00A9478D /* WormGearsView.swift in Sources */,
 				5EE3D59F27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift in Sources */,
 				5E1B791A27CE955400A9478D /* DataModel.swift in Sources */,
 			);

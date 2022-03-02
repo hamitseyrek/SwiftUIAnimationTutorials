@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct BeltView: View {
-    
     @State var animateBelt: Bool = false
     var beltWidth: CGFloat = 0.0
     var beltHeight: CGFloat = 0.0
@@ -22,7 +21,6 @@ struct BeltView: View {
     
     var body: some View {
         ZStack {
-            //belt
             Capsule()
                 .trim(from: 0, to: 1)
                 .stroke(Color.black, style: StrokeStyle(lineWidth: 7, lineJoin: .round, dash: [5, 1.5], dashPhase: animateBelt ? dashPhaseValue : 0))

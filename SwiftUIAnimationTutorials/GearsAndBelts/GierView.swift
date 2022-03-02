@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct GierView: View {
-    
     @State private var rotateGear = false
     var gearImage: String = "singleGear"
     var gearWidth: CGFloat = 0.0
