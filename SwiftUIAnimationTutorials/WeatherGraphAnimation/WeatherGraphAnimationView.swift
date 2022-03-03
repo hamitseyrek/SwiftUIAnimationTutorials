@@ -91,7 +91,8 @@ struct WeatherGraphAnimationView: View {
                 GeometryReader { geo in
                     VStack {
                         if animateTemp {
-                            Text("Temperature").fontWeight(.medium).font(.title).shadow(color: .black, radius: 1, x: 0, y: 2).transition(AnyTransition.offset(x: 300)).animation(Animation.easeOut(duration: 1.0))
+                            Text("Temperature").fontWeight(.medium).font(.title).shadow(color: .black, radius: 1, x: 0, y: 2).transition(AnyTransition.offset(x: 300))
+                                .animation(Animation.easeOut(duration: 1.0))
                         }
                         
                         if animatePrecip {

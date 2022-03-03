@@ -24,6 +24,8 @@
 		5E1B793727CFEED600A9478D /* sevemedim.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5E1B793627CFEED600A9478D /* sevemedim.m4a */; };
 		5E1B793927CFEF2400A9478D /* BuoyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B793827CFEF2400A9478D /* BuoyView.swift */; };
 		5E1B793B27CFEF4700A9478D /* WaweView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B793A27CFEF4700A9478D /* WaweView.swift */; };
+		5E1B794027D1409A00A9478D /* HeartAnimateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B793F27D1409A00A9478D /* HeartAnimateView.swift */; };
+		5E1B794227D140BE00A9478D /* HeartShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B794127D140BE00A9478D /* HeartShape.swift */; };
 		5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */; };
 		5E41628527C802B4008B9352 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628427C802B4008B9352 /* PlaySound.swift */; };
 		5E41628727C802F5008B9352 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628627C802F5008B9352 /* RecordView.swift */; };
@@ -67,6 +69,8 @@
 		5E1B793627CFEED600A9478D /* sevemedim.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sevemedim.m4a; sourceTree = "<group>"; };
 		5E1B793827CFEF2400A9478D /* BuoyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuoyView.swift; sourceTree = "<group>"; };
 		5E1B793A27CFEF4700A9478D /* WaweView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaweView.swift; sourceTree = "<group>"; };
+		5E1B793F27D1409A00A9478D /* HeartAnimateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimateView.swift; sourceTree = "<group>"; };
+		5E1B794127D140BE00A9478D /* HeartShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartShape.swift; sourceTree = "<group>"; };
 		5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerBox.swift; sourceTree = "<group>"; };
 		5E41628427C802B4008B9352 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		5E41628627C802F5008B9352 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
@@ -147,6 +151,15 @@
 				5E1B793A27CFEF4700A9478D /* WaweView.swift */,
 			);
 			path = Wawes;
+			sourceTree = "<group>";
+		};
+		5E1B793E27D1407600A9478D /* HeartAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B793F27D1409A00A9478D /* HeartAnimateView.swift */,
+				5E1B794127D140BE00A9478D /* HeartShape.swift */,
+			);
+			path = HeartAnimate;
 			sourceTree = "<group>";
 		};
 		5E41627F27C7FC16008B9352 /* RecordPlayer */ = {
@@ -230,6 +243,7 @@
 		5EE3D59D27C78E0800BCFDF8 /* SwiftUIAnimationTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				5E1B793E27D1407600A9478D /* HeartAnimate */,
 				5E1B792F27CFED7A00A9478D /* Wawes */,
 				5E1B792227CF7E2E00A9478D /* GearsAndBelts */,
 				5E1B791627CE941F00A9478D /* WeatherGraphAnimation */,
@@ -389,6 +403,7 @@
 				5E41629927C971D3008B9352 /* FlyingBirdView.swift in Sources */,
 				5E1B791827CE944300A9478D /* WeatherGraphAnimationView.swift in Sources */,
 				5EDC147527CABE860080DA96 /* FlyPresentDismissTransitionView.swift in Sources */,
+				5E1B794227D140BE00A9478D /* HeartShape.swift in Sources */,
 				5E1B792827CFD53400A9478D /* BeltView.swift in Sources */,
 				5E1B793127CFED9E00A9478D /* WawesView.swift in Sources */,
 				5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */,
@@ -402,6 +417,7 @@
 				5E41628727C802F5008B9352 /* RecordView.swift in Sources */,
 				5EE3D5AE27C78E4E00BCFDF8 /* CircleView.swift in Sources */,
 				5EF2841927CCD1F200901443 /* SwingingView.swift in Sources */,
+				5E1B794027D1409A00A9478D /* HeartAnimateView.swift in Sources */,
 				5EF2841427CB74AA00901443 /*  FrameAndDoorsView.swift in Sources */,
 				5EE3D5A127C78E0800BCFDF8 /* ContentView.swift in Sources */,
 				5E1B792C27CFDAA700A9478D /* ShaftView.swift in Sources */,
