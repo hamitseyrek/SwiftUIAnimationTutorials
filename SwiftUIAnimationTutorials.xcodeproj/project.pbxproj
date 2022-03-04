@@ -26,6 +26,8 @@
 		5E1B793B27CFEF4700A9478D /* WaweView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B793A27CFEF4700A9478D /* WaweView.swift */; };
 		5E1B794027D1409A00A9478D /* HeartAnimateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B793F27D1409A00A9478D /* HeartAnimateView.swift */; };
 		5E1B794227D140BE00A9478D /* HeartShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B794127D140BE00A9478D /* HeartShape.swift */; };
+		5E1B794527D1456400A9478D /* ExpandButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B794427D1456400A9478D /* ExpandButtonView.swift */; };
+		5E1B794727D27F3B00A9478D /* ExpandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B794627D27F3B00A9478D /* ExpandingView.swift */; };
 		5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */; };
 		5E41628527C802B4008B9352 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628427C802B4008B9352 /* PlaySound.swift */; };
 		5E41628727C802F5008B9352 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628627C802F5008B9352 /* RecordView.swift */; };
@@ -71,6 +73,8 @@
 		5E1B793A27CFEF4700A9478D /* WaweView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaweView.swift; sourceTree = "<group>"; };
 		5E1B793F27D1409A00A9478D /* HeartAnimateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimateView.swift; sourceTree = "<group>"; };
 		5E1B794127D140BE00A9478D /* HeartShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartShape.swift; sourceTree = "<group>"; };
+		5E1B794427D1456400A9478D /* ExpandButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandButtonView.swift; sourceTree = "<group>"; };
+		5E1B794627D27F3B00A9478D /* ExpandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingView.swift; sourceTree = "<group>"; };
 		5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerBox.swift; sourceTree = "<group>"; };
 		5E41628427C802B4008B9352 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		5E41628627C802F5008B9352 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
@@ -162,6 +166,15 @@
 			path = HeartAnimate;
 			sourceTree = "<group>";
 		};
+		5E1B794327D144F600A9478D /* ExpandButton */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B794427D1456400A9478D /* ExpandButtonView.swift */,
+				5E1B794627D27F3B00A9478D /* ExpandingView.swift */,
+			);
+			path = ExpandButton;
+			sourceTree = "<group>";
+		};
 		5E41627F27C7FC16008B9352 /* RecordPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +256,7 @@
 		5EE3D59D27C78E0800BCFDF8 /* SwiftUIAnimationTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				5E1B794327D144F600A9478D /* ExpandButton */,
 				5E1B793E27D1407600A9478D /* HeartAnimate */,
 				5E1B792F27CFED7A00A9478D /* Wawes */,
 				5E1B792227CF7E2E00A9478D /* GearsAndBelts */,
@@ -396,6 +410,7 @@
 				5E1B792127CF7AA900A9478D /* SunMoonToggleView.swift in Sources */,
 				5EF2840B27CB63A300901443 /* ParallaxEffectView.swift in Sources */,
 				5E1B792427CF7E6800A9478D /* GearsAndBeltsView.swift in Sources */,
+				5E1B794727D27F3B00A9478D /* ExpandingView.swift in Sources */,
 				5EDC147727CABF010080DA96 /* SettingsView.swift in Sources */,
 				5E41628E27C805DE008B9352 /* RecordPlayerView.swift in Sources */,
 				5EF2840E27CB6D6F00901443 /* ElevatorAppView.swift in Sources */,
@@ -413,6 +428,7 @@
 				5E1B792627CFD16A00A9478D /* GearView.swift in Sources */,
 				5E41629327C95474008B9352 /* FunColorRotationView.swift in Sources */,
 				5E41628527C802B4008B9352 /* PlaySound.swift in Sources */,
+				5E1B794527D1456400A9478D /* ExpandButtonView.swift in Sources */,
 				5E1B793927CFEF2400A9478D /* BuoyView.swift in Sources */,
 				5E41628727C802F5008B9352 /* RecordView.swift in Sources */,
 				5EE3D5AE27C78E4E00BCFDF8 /* CircleView.swift in Sources */,
