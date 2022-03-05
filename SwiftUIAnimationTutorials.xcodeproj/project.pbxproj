@@ -33,6 +33,7 @@
 		5E1B794F27D2885300A9478D /* CirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B794E27D2885300A9478D /* CirclesView.swift */; };
 		5E1B795127D2896800A9478D /* CircleEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B795027D2896800A9478D /* CircleEmitterView.swift */; };
 		5E1B795327D28A3900A9478D /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B795227D28A3900A9478D /* ArcView.swift */; };
+		5E1B795627D371C700A9478D /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B795527D371C700A9478D /* SplashScreenView.swift */; };
 		5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */; };
 		5E41628527C802B4008B9352 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628427C802B4008B9352 /* PlaySound.swift */; };
 		5E41628727C802F5008B9352 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628627C802F5008B9352 /* RecordView.swift */; };
@@ -85,6 +86,7 @@
 		5E1B794E27D2885300A9478D /* CirclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesView.swift; sourceTree = "<group>"; };
 		5E1B795027D2896800A9478D /* CircleEmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleEmitterView.swift; sourceTree = "<group>"; };
 		5E1B795227D28A3900A9478D /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		5E1B795527D371C700A9478D /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerBox.swift; sourceTree = "<group>"; };
 		5E41628427C802B4008B9352 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		5E41628627C802F5008B9352 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
@@ -204,6 +206,32 @@
 			path = WifiLoading;
 			sourceTree = "<group>";
 		};
+		5E1B795427D28C7B00A9478D /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B794B27D2853A00A9478D /* WifiLoading */,
+				5E1B794827D281F900A9478D /* LightSwitch */,
+				5E1B794327D144F600A9478D /* ExpandButton */,
+				5E1B793E27D1407600A9478D /* HeartAnimate */,
+				5E1B792F27CFED7A00A9478D /* Wawes */,
+				5E1B792227CF7E2E00A9478D /* GearsAndBelts */,
+				5E1B791627CE941F00A9478D /* WeatherGraphAnimation */,
+				5E1B791327CE18E900A9478D /* TwinklingStars */,
+				5EF2841727CCD1D700901443 /* Swinging */,
+				5EF2840C27CB6D5900901443 /* ElevatorApp */,
+				5EF2840927CB638200901443 /* ParallaxEffext */,
+				5EDC147327CABE5C0080DA96 /* FlyPresentDismissTransition */,
+				5EDC147027CA39660080DA96 /* HugeRotation */,
+				5EDC146D27CA29400080DA96 /* BubbleSpriteKit */,
+				5E41629727C971BB008B9352 /* FlyingBird */,
+				5E41629427C964A7008B9352 /* BreathingFlower */,
+				5E41629127C95406008B9352 /* FunColorRotation */,
+				5E41627F27C7FC16008B9352 /* RecordPlayer */,
+				5EE3D5AC27C78E1400BCFDF8 /* CircleAnimation */,
+			);
+			path = Tutorials;
+			sourceTree = "<group>";
+		};
 		5E41627F27C7FC16008B9352 /* RecordPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,29 +313,12 @@
 		5EE3D59D27C78E0800BCFDF8 /* SwiftUIAnimationTutorials */ = {
 			isa = PBXGroup;
 			children = (
-				5E1B794B27D2853A00A9478D /* WifiLoading */,
-				5E1B794827D281F900A9478D /* LightSwitch */,
-				5E1B794327D144F600A9478D /* ExpandButton */,
-				5E1B793E27D1407600A9478D /* HeartAnimate */,
-				5E1B792F27CFED7A00A9478D /* Wawes */,
-				5E1B792227CF7E2E00A9478D /* GearsAndBelts */,
-				5E1B791627CE941F00A9478D /* WeatherGraphAnimation */,
-				5E1B791327CE18E900A9478D /* TwinklingStars */,
-				5EF2841727CCD1D700901443 /* Swinging */,
-				5EF2840C27CB6D5900901443 /* ElevatorApp */,
-				5EF2840927CB638200901443 /* ParallaxEffext */,
-				5EDC147327CABE5C0080DA96 /* FlyPresentDismissTransition */,
-				5EDC147027CA39660080DA96 /* HugeRotation */,
-				5EDC146D27CA29400080DA96 /* BubbleSpriteKit */,
-				5E41629727C971BB008B9352 /* FlyingBird */,
-				5E41629427C964A7008B9352 /* BreathingFlower */,
-				5E41629127C95406008B9352 /* FunColorRotation */,
-				5E41627F27C7FC16008B9352 /* RecordPlayer */,
-				5EE3D5AC27C78E1400BCFDF8 /* CircleAnimation */,
+				5E1B795427D28C7B00A9478D /* Tutorials */,
 				5EE3D59E27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift */,
 				5EE3D5A027C78E0800BCFDF8 /* ContentView.swift */,
 				5EE3D5A227C78E0900BCFDF8 /* Assets.xcassets */,
 				5EE3D5A427C78E0900BCFDF8 /* Preview Content */,
+				5E1B795527D371C700A9478D /* SplashScreenView.swift */,
 			);
 			path = SwiftUIAnimationTutorials;
 			sourceTree = "<group>";
@@ -451,6 +462,7 @@
 				5E41629927C971D3008B9352 /* FlyingBirdView.swift in Sources */,
 				5E1B791827CE944300A9478D /* WeatherGraphAnimationView.swift in Sources */,
 				5EDC147527CABE860080DA96 /* FlyPresentDismissTransitionView.swift in Sources */,
+				5E1B795627D371C700A9478D /* SplashScreenView.swift in Sources */,
 				5E1B794227D140BE00A9478D /* HeartShape.swift in Sources */,
 				5E1B792827CFD53400A9478D /* BeltView.swift in Sources */,
 				5E1B793127CFED9E00A9478D /* WawesView.swift in Sources */,

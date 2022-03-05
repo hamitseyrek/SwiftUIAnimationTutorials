@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Home()
+        ZStack {
+            Home()
+            SplashScreenView()
+        }
     }
 }
 
