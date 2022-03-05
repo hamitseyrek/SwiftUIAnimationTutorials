@@ -9,11 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var goToHome = false
     var body: some View {
         ZStack {
-            Home()
+            if goToHome {
+                Home()
+            } else {
+                OnBoarding()
+            }
             SplashScreenView()
         }
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("PassOnBoarding")), perform: { _ in
+            withAnimation {
+                goToHome = true
+            }
+        })
     }
 }
 
@@ -229,4 +239,12 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+extension View {
+    
+    func getScreenBounds() -> CGRect {
+        return UIScreen.main.bounds
+    }
+    
 }

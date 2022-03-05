@@ -34,6 +34,10 @@
 		5E1B795127D2896800A9478D /* CircleEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B795027D2896800A9478D /* CircleEmitterView.swift */; };
 		5E1B795327D28A3900A9478D /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B795227D28A3900A9478D /* ArcView.swift */; };
 		5E1B795627D371C700A9478D /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B795527D371C700A9478D /* SplashScreenView.swift */; };
+		5E1B795827D3747200A9478D /* OnBoardScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B795727D3747200A9478D /* OnBoardScreenView.swift */; };
+		5E1B795B27D3846400A9478D /* BoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B795A27D3846400A9478D /* BoardingScreen.swift */; };
+		5E1B795E27D386BB00A9478D /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B795D27D386BB00A9478D /* OnBoarding.swift */; };
+		5E1B796027D387A000A9478D /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B795F27D387A000A9478D /* OffsetPageTabView.swift */; };
 		5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */; };
 		5E41628527C802B4008B9352 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628427C802B4008B9352 /* PlaySound.swift */; };
 		5E41628727C802F5008B9352 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628627C802F5008B9352 /* RecordView.swift */; };
@@ -87,6 +91,10 @@
 		5E1B795027D2896800A9478D /* CircleEmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleEmitterView.swift; sourceTree = "<group>"; };
 		5E1B795227D28A3900A9478D /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 		5E1B795527D371C700A9478D /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		5E1B795727D3747200A9478D /* OnBoardScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardScreenView.swift; sourceTree = "<group>"; };
+		5E1B795A27D3846400A9478D /* BoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingScreen.swift; sourceTree = "<group>"; };
+		5E1B795D27D386BB00A9478D /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		5E1B795F27D387A000A9478D /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
 		5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerBox.swift; sourceTree = "<group>"; };
 		5E41628427C802B4008B9352 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		5E41628627C802F5008B9352 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
@@ -232,6 +240,23 @@
 			path = Tutorials;
 			sourceTree = "<group>";
 		};
+		5E1B795927D3844D00A9478D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B795A27D3846400A9478D /* BoardingScreen.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E1B795C27D386A800A9478D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B795D27D386BB00A9478D /* OnBoarding.swift */,
+				5E1B795F27D387A000A9478D /* OffsetPageTabView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5E41627F27C7FC16008B9352 /* RecordPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,9 +338,12 @@
 		5EE3D59D27C78E0800BCFDF8 /* SwiftUIAnimationTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				5E1B795C27D386A800A9478D /* View */,
+				5E1B795927D3844D00A9478D /* Model */,
 				5E1B795427D28C7B00A9478D /* Tutorials */,
 				5EE3D59E27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift */,
 				5EE3D5A027C78E0800BCFDF8 /* ContentView.swift */,
+				5E1B795727D3747200A9478D /* OnBoardScreenView.swift */,
 				5EE3D5A227C78E0900BCFDF8 /* Assets.xcassets */,
 				5EE3D5A427C78E0900BCFDF8 /* Preview Content */,
 				5E1B795527D371C700A9478D /* SplashScreenView.swift */,
@@ -451,6 +479,7 @@
 				5EF2841627CB78CA00901443 /* ElevatorPlaySound.swift in Sources */,
 				5E1B792127CF7AA900A9478D /* SunMoonToggleView.swift in Sources */,
 				5EF2840B27CB63A300901443 /* ParallaxEffectView.swift in Sources */,
+				5E1B795827D3747200A9478D /* OnBoardScreenView.swift in Sources */,
 				5E1B792427CF7E6800A9478D /* GearsAndBeltsView.swift in Sources */,
 				5E1B795127D2896800A9478D /* CircleEmitterView.swift in Sources */,
 				5E1B794727D27F3B00A9478D /* ExpandingView.swift in Sources */,
@@ -470,7 +499,9 @@
 				5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */,
 				5E41628C27C8043B008B9352 /* ArmView.swift in Sources */,
 				5E1B792E27CFDAFC00A9478D /* FanView.swift in Sources */,
+				5E1B796027D387A000A9478D /* OffsetPageTabView.swift in Sources */,
 				5E41629627C964CC008B9352 /* BreathingFlowerView.swift in Sources */,
+				5E1B795E27D386BB00A9478D /* OnBoarding.swift in Sources */,
 				5E1B792627CFD16A00A9478D /* GearView.swift in Sources */,
 				5E41629327C95474008B9352 /* FunColorRotationView.swift in Sources */,
 				5E41628527C802B4008B9352 /* PlaySound.swift in Sources */,
@@ -487,6 +518,7 @@
 				5E1B792C27CFDAA700A9478D /* ShaftView.swift in Sources */,
 				5EDC147227CA39B00080DA96 /* HugeRotationView.swift in Sources */,
 				5E1B791C27CE974A00A9478D /* PickerView.swift in Sources */,
+				5E1B795B27D3846400A9478D /* BoardingScreen.swift in Sources */,
 				5EDC146F27CA29590080DA96 /* BubbleSpriteKitView.swift in Sources */,
 				5E1B792A27CFD60D00A9478D /* WormGearsView.swift in Sources */,
 				5EE3D59F27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift in Sources */,
