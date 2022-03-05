@@ -17,18 +17,17 @@ struct OnBoarding: View {
             HStack {
                 ForEach(boardingScreens) { screen in
                     VStack(spacing: 15) {
+                        
                         Image(screen.image)
                             .resizable()
-                            .scaledToFit()
+                            .aspectRatio(contentMode: .fit)
                             .frame(width: getScreenBounds().width - 100, height: getScreenBounds().width - 100)
-                            .offset(y: -150)
-                            .zIndex(-1)
+                            .offset(y: -140)
                         
                         VStack(alignment: .leading, spacing: 15) {
                             Text(screen.title)
                                 .font(.largeTitle.bold())
                                 .foregroundColor(.white)
-                                .zIndex(-1)
                             
                             Text(screen.description)
                                 .fontWeight(.semibold)
@@ -36,7 +35,7 @@ struct OnBoarding: View {
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding()
-                        .offset(y: -70)
+                        .offset(y: 30)
                     }
                     .frame(width: getScreenBounds().width)
                     .frame(maxHeight: .infinity)
@@ -50,14 +49,11 @@ struct OnBoarding: View {
                 .scaleEffect(2)
                 .rotationEffect(.init(degrees: 25))
                 .rotationEffect(.init(degrees: getRotation()))
-                .offset(y: -getScreenBounds().width + 20)
-                .zIndex(1.0)
+                .offset(y: -getScreenBounds().width + 120)
         )
         .background(
             Color("screen\(getIndex() + 1)")
                 .animation(.easeInOut, value: getIndex())
-                .zIndex(1)
-            
         )
         .ignoresSafeArea(.container, edges: .all)
         .overlay(

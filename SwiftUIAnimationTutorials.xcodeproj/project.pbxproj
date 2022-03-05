@@ -252,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				5E1B795D27D386BB00A9478D /* OnBoarding.swift */,
+				5E1B795527D371C700A9478D /* SplashScreenView.swift */,
 				5E1B795F27D387A000A9478D /* OffsetPageTabView.swift */,
 			);
 			path = View;
@@ -346,7 +347,6 @@
 				5E1B795727D3747200A9478D /* OnBoardScreenView.swift */,
 				5EE3D5A227C78E0900BCFDF8 /* Assets.xcassets */,
 				5EE3D5A427C78E0900BCFDF8 /* Preview Content */,
-				5E1B795527D371C700A9478D /* SplashScreenView.swift */,
 			);
 			path = SwiftUIAnimationTutorials;
 			sourceTree = "<group>";
