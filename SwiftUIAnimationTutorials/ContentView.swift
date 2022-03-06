@@ -11,11 +11,27 @@ struct ContentView: View {
     
     @State var goToHome = false
     @StateObject var homeModel = CarouselViewModel()
+    @State var filteredItems = tutorials
     
     var body: some View {
         ZStack {
             if goToHome {
-                HomeView().environmentObject(homeModel)
+                CustomNavigationView(view: AnyView(HomeView(filteredItems: $filteredItems).environmentObject(homeModel)), placeHolder: "Apps, Animations", largeTitle: true, title: "Animation Tutorials", onSearch: { txt in
+                            
+                            // filtering Data
+                            if txt != "" {
+                                self.filteredItems = tutorials.filter{
+                                    $0.name.lowercased().contains(txt.lowercased())
+                                }
+                            } else {
+                                self.filteredItems = tutorials
+                            }
+                        }, onCancel: {
+                            // Do you own code when search and canceled
+                            self.filteredItems = tutorials
+                        })
+                        .ignoresSafeArea()
+                
             } else {
                 OnBoarding()
             }

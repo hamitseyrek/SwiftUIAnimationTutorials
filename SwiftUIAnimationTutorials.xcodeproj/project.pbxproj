@@ -42,6 +42,11 @@
 		5E1B796F27D48C5A00A9478D /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B796E27D48C5A00A9478D /* CardModel.swift */; };
 		5E1B797127D48CA200A9478D /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B797027D48CA200A9478D /* CarouselViewModel.swift */; };
 		5E1B797327D48CF400A9478D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B797227D48CF400A9478D /* CardView.swift */; };
+		5E1B797527D4BF1400A9478D /* CustomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B797427D4BF1400A9478D /* CustomGridView.swift */; };
+		5E1B797727D4C4AC00A9478D /* TutorialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B797627D4C4AC00A9478D /* TutorialModel.swift */; };
+		5E1B797927D4C60100A9478D /* CustomGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B797827D4C60100A9478D /* CustomGridViewModel.swift */; };
+		5E1B797B27D4D18F00A9478D /* CustomCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B797A27D4D18F00A9478D /* CustomCarouselView.swift */; };
+		5E1B797D27D4D90400A9478D /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B797C27D4D90400A9478D /* CustomNavigationView.swift */; };
 		5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */; };
 		5E41628527C802B4008B9352 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628427C802B4008B9352 /* PlaySound.swift */; };
 		5E41628727C802F5008B9352 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41628627C802F5008B9352 /* RecordView.swift */; };
@@ -103,6 +108,11 @@
 		5E1B796E27D48C5A00A9478D /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		5E1B797027D48CA200A9478D /* CarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModel.swift; sourceTree = "<group>"; };
 		5E1B797227D48CF400A9478D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5E1B797427D4BF1400A9478D /* CustomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridView.swift; sourceTree = "<group>"; };
+		5E1B797627D4C4AC00A9478D /* TutorialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialModel.swift; sourceTree = "<group>"; };
+		5E1B797827D4C60100A9478D /* CustomGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridViewModel.swift; sourceTree = "<group>"; };
+		5E1B797A27D4D18F00A9478D /* CustomCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarouselView.swift; sourceTree = "<group>"; };
+		5E1B797C27D4D90400A9478D /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		5E41628227C7FD54008B9352 /* RecordPlayerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerBox.swift; sourceTree = "<group>"; };
 		5E41628427C802B4008B9352 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		5E41628627C802F5008B9352 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
@@ -253,6 +263,7 @@
 			children = (
 				5E1B795A27D3846400A9478D /* BoardingScreen.swift */,
 				5E1B796E27D48C5A00A9478D /* CardModel.swift */,
+				5E1B797627D4C4AC00A9478D /* TutorialModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,6 +276,9 @@
 				5E1B795F27D387A000A9478D /* OffsetPageTabView.swift */,
 				5E1B796C27D48BA500A9478D /* HomeView.swift */,
 				5E1B797227D48CF400A9478D /* CardView.swift */,
+				5E1B797427D4BF1400A9478D /* CustomGridView.swift */,
+				5E1B797A27D4D18F00A9478D /* CustomCarouselView.swift */,
+				5E1B797C27D4D90400A9478D /* CustomNavigationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				5E1B797027D48CA200A9478D /* CarouselViewModel.swift */,
+				5E1B797827D4C60100A9478D /* CustomGridViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -499,17 +514,21 @@
 				5EF2841627CB78CA00901443 /* ElevatorPlaySound.swift in Sources */,
 				5E1B792127CF7AA900A9478D /* SunMoonToggleView.swift in Sources */,
 				5EF2840B27CB63A300901443 /* ParallaxEffectView.swift in Sources */,
+				5E1B797927D4C60100A9478D /* CustomGridViewModel.swift in Sources */,
 				5E1B795827D3747200A9478D /* OnBoardScreenView.swift in Sources */,
 				5E1B792427CF7E6800A9478D /* GearsAndBeltsView.swift in Sources */,
 				5E1B795127D2896800A9478D /* CircleEmitterView.swift in Sources */,
+				5E1B797527D4BF1400A9478D /* CustomGridView.swift in Sources */,
 				5E1B794727D27F3B00A9478D /* ExpandingView.swift in Sources */,
 				5EDC147727CABF010080DA96 /* SettingsView.swift in Sources */,
 				5E1B795327D28A3900A9478D /* ArcView.swift in Sources */,
 				5E41628E27C805DE008B9352 /* RecordPlayerView.swift in Sources */,
 				5EF2840E27CB6D6F00901443 /* ElevatorAppView.swift in Sources */,
 				5E1B793B27CFEF4700A9478D /* WaweView.swift in Sources */,
+				5E1B797B27D4D18F00A9478D /* CustomCarouselView.swift in Sources */,
 				5E1B797127D48CA200A9478D /* CarouselViewModel.swift in Sources */,
 				5E41629927C971D3008B9352 /* FlyingBirdView.swift in Sources */,
+				5E1B797D27D4D90400A9478D /* CustomNavigationView.swift in Sources */,
 				5E1B791827CE944300A9478D /* WeatherGraphAnimationView.swift in Sources */,
 				5EDC147527CABE860080DA96 /* FlyPresentDismissTransitionView.swift in Sources */,
 				5E1B795627D371C700A9478D /* SplashScreenView.swift in Sources */,
@@ -517,6 +536,7 @@
 				5E1B792827CFD53400A9478D /* BeltView.swift in Sources */,
 				5E1B793127CFED9E00A9478D /* WawesView.swift in Sources */,
 				5E1B794D27D2855B00A9478D /* WifiLoadingView.swift in Sources */,
+				5E1B797727D4C4AC00A9478D /* TutorialModel.swift in Sources */,
 				5E41628327C7FD54008B9352 /* RecordPlayerBox.swift in Sources */,
 				5E41628C27C8043B008B9352 /* ArmView.swift in Sources */,
 				5E1B792E27CFDAFC00A9478D /* FanView.swift in Sources */,
