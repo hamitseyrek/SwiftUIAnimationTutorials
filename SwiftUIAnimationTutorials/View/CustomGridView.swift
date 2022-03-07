@@ -12,6 +12,9 @@ struct CustomGridView: View {
     @State var width = (UIScreen.main.bounds.width - 45) / 2
     // for search bar
     @Binding var filteredItems: [TutorialModel]
+    @EnvironmentObject var model: CustomGridViewModel
+    var tutorial: TutorialModel
+    var animation: Namespace.ID
     
     var body: some View {
         ScrollView {
@@ -62,6 +65,18 @@ struct CustomGridView: View {
                         }
                     }.onTapGesture {
                         print("clicked")
+                        withAnimation(.spring()) {
+                            
+                            model.selectedTutorial = tutorial
+                            model.showTutorial.toggle()
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                                withAnimation(.easeIn) {
+                                    
+                                    model.showTContent = true
+                                }
+                            }
+                        }
                     }
                 }
             }

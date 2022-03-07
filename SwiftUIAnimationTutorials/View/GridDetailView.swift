@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct GridDetailView: View {
-    var columns = Array(repeating: GridItem(.flexible(), spacing: 15), count: 2)
     @State var selected: TutorialModel = tutorials[0]
     @State var show = false
     // to load Hero View After Animation is done
     @State var loadView = true
     
-    @Namespace var namespace
     
     var body: some View {
         VStack {
@@ -82,8 +80,4 @@ struct GridDetailView: View {
     }
 }
 
-struct GridDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        GridDetailView()
-    }
-}
+
