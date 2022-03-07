@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @State var goToHome = false
     @StateObject var homeModel = CarouselViewModel()
     @State var filteredItems = tutorials

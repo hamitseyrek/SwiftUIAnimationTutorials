@@ -11,13 +11,10 @@ struct OnBoarding: View {
     @State var offset: CGFloat = .zero
     
     var body: some View {
-        
         OffsetPageTabView(offset: $offset) {
-            
             HStack {
                 ForEach(boardingScreens) { screen in
                     VStack(spacing: 15) {
-                        
                         Image(screen.image)
                             .resizable()
                             .aspectRatio(contentMode: .fit)

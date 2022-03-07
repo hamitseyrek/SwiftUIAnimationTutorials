@@ -40,26 +40,28 @@ struct CustomGridView: View {
             .padding(.horizontal)
             .padding(.top, 25)
             LazyVGrid(columns: columns, spacing: 15) {
-                ForEach(filteredItems, id: \.name) { album in
+                ForEach(filteredItems, id: \.name) { tutorial in
                     // Build Custom View using ViewBuilder
                     
                     // Our Content goes here
                     CustomView(columns: $columns) {
-                        Image(album.image)
+                        Image(tutorial.image)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: columns.count == 1 ? 65 : width, height: columns.count == 1 ? 65 : width)
                             .cornerRadius(15)
                     } detail: {
                         VStack(alignment: .leading, spacing: 10) {
-                            Text(album.name)
+                            Text(tutorial.name)
                                 .fontWeight(.heavy)
                             
-                            Text(album.keys)
+                            Text(tutorial.keys)
                                 .font(.caption)
                                 .fontWeight(.heavy)
                                 .foregroundColor(.gray)
                         }
+                    }.onTapGesture {
+                        print("clicked")
                     }
                 }
             }

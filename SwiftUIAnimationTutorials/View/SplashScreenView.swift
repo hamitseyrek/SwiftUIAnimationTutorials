@@ -18,6 +18,7 @@ struct SplashScreenView: View {
     var body: some View {
         ZStack {
             Color.offWhite
+            
             RoundedRectangle(cornerRadius: 25)
                 .fill(Color.offWhite)
                 .frame(width: 300, height: 300)
@@ -34,8 +35,6 @@ struct SplashScreenView: View {
                     .scaleEffect(animate ? 3 : 1)
                 // setting width to avoid over size
                     .frame(width: UIScreen.main.bounds.width)
-                
-                
             }
         }
         .ignoresSafeArea(.all, edges: .all)
@@ -44,7 +43,7 @@ struct SplashScreenView: View {
         .opacity(endSplash ? 0 : 1)
     }
     func animateSplash() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
             // You can adjust your own duration
             // or wait until data loads
             withAnimation(Animation.easeOut(duration: 0.55)) {

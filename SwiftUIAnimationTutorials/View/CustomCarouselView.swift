@@ -10,7 +10,7 @@ import SwiftUI
 struct CustomCarouselView: View {
     @EnvironmentObject var model: CarouselViewModel
     @Namespace var animation
-
+    
     var body: some View {
         ZStack {
             Button(action: ResetViews) {
@@ -32,19 +32,21 @@ struct CustomCarouselView: View {
                     
                     Spacer(minLength: 0)
                 }
-                .frame(height: 300)
+                .frame(height: 240)
                 .contentShape(Rectangle())
                 .offset(x: model.cards[index].offset)
                 .gesture(DragGesture(minimumDistance: 0)
                             .onChanged({ (value) in
-                                onChanged(value: value, index: index)
-                            }).onEnded({ (value) in
-                                onEnd(value: value, index: index)
-                            }))
+                    onChanged(value: value, index: index)
+                }).onEnded({ (value) in
+                    onEnd(value: value, index: index)
+                }))
+            }
+            if model.showCard {
+                CarouselDetailView(animation: animation)
             }
         }
-        .padding(.top, 25)
-        .padding(.horizontal, 30)
+        .padding(.horizontal, 20)
     }
     
     // Resetting Views
@@ -103,11 +105,5 @@ struct CustomCarouselView: View {
     // Getting OFfset
     func getCardOffset(index: Int) -> CGFloat {
         return index - model.swipedCard <= 2 ? CGFloat(index - model.swipedCard) * 30 : 60
-    }
-}
-
-struct CustomCarouselView_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomCarouselView()
     }
 }
