@@ -13,6 +13,9 @@ struct GridDetailView: View {
     // to load Hero View After Animation is done
     @State var loadView = true
     
+    init(tut: String) {
+        print(tut)
+    }
     
     var body: some View {
         VStack {

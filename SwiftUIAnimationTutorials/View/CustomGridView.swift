@@ -13,8 +13,10 @@ struct CustomGridView: View {
     // for search bar
     @Binding var filteredItems: [TutorialModel]
     @EnvironmentObject var model: CustomGridViewModel
-    var tutorial: TutorialModel
-    var animation: Namespace.ID
+    
+    
+    @StateObject var gridDetailView = CarouselViewModel()
+    @State private var show = false
     
     var body: some View {
         ScrollView {
@@ -65,18 +67,7 @@ struct CustomGridView: View {
                         }
                     }.onTapGesture {
                         print("clicked")
-                        withAnimation(.spring()) {
-                            
-                            model.selectedTutorial = tutorial
-                            model.showTutorial.toggle()
-                            
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                                withAnimation(.easeIn) {
-                                    
-                                    model.showTContent = true
-                                }
-                            }
-                        }
+                        show.toggle()
                     }
                 }
             }
@@ -99,17 +90,21 @@ struct CustomView<Content: View, Detail: View>: View {
     var body: some View {
         if columns.count == 1 {
             HStack(spacing: 15) {
-                content
-                detail
-                Spacer(minLength: 0)
+                NavigationLink(destination: GridDetailView(tut: "element").navigationBarHidden(true)) {
+                    content
+                    detail
+                    Spacer(minLength: 0)
+                }
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
         } else {
             VStack {
-                content
-                detail
+                NavigationLink(destination: GridDetailView(tut: "element").navigationBarHidden(true)) {
+                    content
+                    detail
+                }
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
         }
     }
 }
