@@ -16,6 +16,8 @@ struct GridDetailView: View {
     init(tut: String) {
         print(tut)
     }
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     
     var body: some View {
         VStack {
@@ -27,6 +29,7 @@ struct GridDetailView: View {
                     if loadView {
                         HStack {
                             Button(action: {
+                                self.presentationMode.wrappedValue.dismiss()
                                 loadView.toggle()
                                 
                                 withAnimation(.spring()) {

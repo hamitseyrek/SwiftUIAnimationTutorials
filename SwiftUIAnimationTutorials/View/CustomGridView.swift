@@ -47,27 +47,28 @@ struct CustomGridView: View {
             LazyVGrid(columns: columns, spacing: 15) {
                 ForEach(filteredItems, id: \.name) { tutorial in
                     // Build Custom View using ViewBuilder
-                    
-                    // Our Content goes here
-                    CustomView(columns: $columns) {
-                        Image(tutorial.image)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: columns.count == 1 ? 65 : width, height: columns.count == 1 ? 65 : width)
-                            .cornerRadius(15)
-                    } detail: {
-                        VStack(alignment: .leading, spacing: 10) {
-                            Text(tutorial.name)
-                                .fontWeight(.heavy)
-                            
-                            Text(tutorial.keys)
-                                .font(.caption)
-                                .fontWeight(.heavy)
-                                .foregroundColor(.gray)
+                    NavigationLink(destination: GridDetailView(tut: "element").navigationBarHidden(true)) {
+                        // Our Content goes here
+                        CustomView(columns: $columns) {
+                            Image(tutorial.image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: columns.count == 1 ? 65 : width, height: columns.count == 1 ? 65 : width)
+                                .cornerRadius(15)
+                        } detail: {
+                            VStack(alignment: .leading, spacing: 10) {
+                                Text(tutorial.name)
+                                    .fontWeight(.heavy)
+                                
+                                Text(tutorial.keys)
+                                    .font(.caption)
+                                    .fontWeight(.heavy)
+                                    .foregroundColor(.gray)
+                            }
+                        }.onTapGesture {
+                            print("clicked")
+                            //show.toggle()
                         }
-                    }.onTapGesture {
-                        print("clicked")
-                        show.toggle()
                     }
                 }
             }
@@ -90,21 +91,17 @@ struct CustomView<Content: View, Detail: View>: View {
     var body: some View {
         if columns.count == 1 {
             HStack(spacing: 15) {
-                NavigationLink(destination: GridDetailView(tut: "element").navigationBarHidden(true)) {
-                    content
-                    detail
-                    Spacer(minLength: 0)
-                }
-                .padding(.horizontal)
+                content
+                detail
+                Spacer(minLength: 0)
             }
+            .padding(.horizontal)
         } else {
             VStack {
-                NavigationLink(destination: GridDetailView(tut: "element").navigationBarHidden(true)) {
-                    content
-                    detail
-                }
-                .padding(.horizontal)
+                content
+                detail
             }
+            .padding(.horizontal)
         }
     }
 }
