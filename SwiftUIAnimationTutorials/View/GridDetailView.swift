@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GridDetailView: View {
+    @Environment(\.presentationMode) var presentationMode
     @State var selected: TutorialModel = tutorials[0]
     @State var show = false
     // to load Hero View After Animation is done
@@ -16,12 +17,10 @@ struct GridDetailView: View {
     init(tut: String) {
         print(tut)
     }
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
+    
     
     var body: some View {
         VStack {
-            ScrollView(.vertical, showsIndicators: false) {
                 ZStack(alignment: Alignment(horizontal: .center, vertical: .top)) {
                     HeartAnimateView()
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 100)
@@ -80,9 +79,7 @@ struct GridDetailView: View {
                             .padding(.horizontal)
                     }
                 }
-            }
-        }
-        .background(Color.white)
+        }.background(Color.black)
     }
 }
 
