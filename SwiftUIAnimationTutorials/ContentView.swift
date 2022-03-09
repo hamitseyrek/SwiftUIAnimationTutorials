@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             if goToHome {
-                CustomNavigationView(view: AnyView(HomeView(filteredItems: $filteredItems).environmentObject(homeModel)), placeHolder: "Apps, Animations", largeTitle: true, title: "Animation Tutorials", onSearch: { txt in
+                CustomNavigationView(view: AnyView(HomeView(filteredItems: $filteredItems).environmentObject(homeModel)), placeHolder: "Apps, Animations", largeTitle: true, title: "Animations Catalog", onSearch: { txt in
                             
                             // filtering Data
                             if txt != "" {

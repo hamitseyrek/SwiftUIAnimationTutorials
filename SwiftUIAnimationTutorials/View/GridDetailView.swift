@@ -9,22 +9,16 @@ import SwiftUI
 
 struct GridDetailView: View {
     @Environment(\.presentationMode) var presentationMode
-    @State var selected: TutorialModel = tutorials[0]
+    
+    var animationView: AnyView
     @State var show = false
     // to load Hero View After Animation is done
     @State var loadView = true
     
-    init(tut: String) {
-        guard let tutorial = tut as? UIView else {
-            return
-        }
-    }
-    
-    
     var body: some View {
         VStack {
                 ZStack(alignment: Alignment(horizontal: .center, vertical: .top)) {
-                    HeartAnimateView()
+                    animationView
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 100)
                     if loadView {
                         HStack {
@@ -33,7 +27,6 @@ struct GridDetailView: View {
                                 
                                 withAnimation(.spring()) {
                                     show.toggle()
-
                                     self.presentationMode.wrappedValue.dismiss()
                                 }
                             }) {
@@ -60,27 +53,6 @@ struct GridDetailView: View {
                         .padding(.horizontal)
                     }
                 }.background(Color.blue)
-                
-                // Detail View
-                // loading after animation
-                if loadView {
-                    VStack {
-                        HStack {
-                            Text(selected.keys)
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .foregroundColor(.black)
-                            
-                        }
-                        //.padding(.top)
-                        .padding(.horizontal)
-                        
-                        Text("Australia is the oldest, flattest, and driest inhabited continent, with the least fertile soils. It has a landmass of 7,617,930 square kilometres (2,941,300 sq mi). A megadiverse country, its size gives it a wide variety of landscapes, with deserts in the centre, tropical rainforests in the north-east, and mountain ranges in the south-east. Australia generates its income from various sources, including mining-related exports, telecommunications, banking, manufacturing, and international education.")
-                            .multilineTextAlignment(.leading)
-                            .padding(.top)
-                            .padding(.horizontal)
-                    }
-                }
         }.background(Color.black)
     }
 }

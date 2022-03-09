@@ -10,14 +10,13 @@ import SwiftUI
 struct CustomGridView: View {
     @State var columns = Array(repeating: GridItem(.flexible(), spacing: 15), count: 1)
     @State var width = (UIScreen.main.bounds.width - 45) / 2
+    
     // for search bar
     @Binding var filteredItems: [TutorialModel]
-    @EnvironmentObject var model: CustomGridViewModel
     
-    
-    @StateObject var gridDetailView = CarouselViewModel()
+    //for detail page navigation
+    @State private var animationView: AnyView = AnyView(WawesView())
     @State private var show = false
-    @State private var currentSelected: String = "wawes"
     
     var body: some View {
         ScrollView {
@@ -66,15 +65,12 @@ struct CustomGridView: View {
                                 .foregroundColor(.gray)
                         }
                     }.onTapGesture {
-                        print("clicked")
                         show.toggle()
-                        self.currentSelected = tutorial.slug
+                        animationView = tutorial.animationView
                     }
                 }
             }
-            
-            NavigationLink(destination: GridDetailView(tut: self.currentSelected).navigationBarHidden(true), isActive: $show) {
-            }
+            NavigationLink(destination: GridDetailView(animationView: animationView).navigationBarHidden(true), isActive: $show) {}
         }
     }
 }

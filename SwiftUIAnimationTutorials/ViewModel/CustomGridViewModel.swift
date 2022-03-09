@@ -12,7 +12,7 @@ class CustomGridViewModel: ObservableObject {
     
     // Detail Content
     @Published var showTutorial = false
-    @Published var selectedTutorial = TutorialModel(name: "hamitt", slug: WawesView(), keys: "mykeys", image: "hamit")
+    @Published var selectedTutorial = TutorialModel(name: "Wawes", animationView: AnyView(WawesView()), keys: "mykeys", image: "hamit")
     
     @Published var showTContent = false
     
