@@ -9,8 +9,8 @@ import SwiftUI
 
 struct GridDetailView: View {
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var gridModel: CustomGridViewModel
     
-    var animationView: AnyView
     @State var show = false
     // to load Hero View After Animation is done
     @State var loadView = true
@@ -18,8 +18,9 @@ struct GridDetailView: View {
     var body: some View {
         VStack {
                 ZStack(alignment: Alignment(horizontal: .center, vertical: .top)) {
-                    animationView
+                    gridModel.selectedTutorial.animationView
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 100)
+
                     if loadView {
                         HStack {
                             Button(action: {

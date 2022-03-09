@@ -8,12 +8,8 @@
 import SwiftUI
 
 class CustomGridViewModel: ObservableObject {
-    @Published var items = tutorials
-    
-    // Detail Content
     @Published var showTutorial = false
     @Published var selectedTutorial = TutorialModel(name: "Wawes", animationView: AnyView(WawesView()), keys: "mykeys", image: "hamit")
-    
     @Published var showTContent = false
     
 }
