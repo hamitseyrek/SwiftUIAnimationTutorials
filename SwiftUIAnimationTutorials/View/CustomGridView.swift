@@ -17,6 +17,7 @@ struct CustomGridView: View {
     
     @StateObject var gridDetailView = CarouselViewModel()
     @State private var show = false
+    @State private var currentSelected: String = "wawes"
     
     var body: some View {
         ScrollView {
@@ -47,30 +48,32 @@ struct CustomGridView: View {
             LazyVGrid(columns: columns, spacing: 15) {
                 ForEach(filteredItems, id: \.name) { tutorial in
                     // Build Custom View using ViewBuilder
-                    NavigationLink(destination: GridDetailView(tut: "element").navigationBarHidden(true)) {
-                        // Our Content goes here
-                        CustomView(columns: $columns) {
-                            Image(tutorial.image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: columns.count == 1 ? 65 : width, height: columns.count == 1 ? 65 : width)
-                                .cornerRadius(15)
-                        } detail: {
-                            VStack(alignment: .leading, spacing: 10) {
-                                Text(tutorial.name)
-                                    .fontWeight(.heavy)
-                                
-                                Text(tutorial.keys)
-                                    .font(.caption)
-                                    .fontWeight(.heavy)
-                                    .foregroundColor(.gray)
-                            }
-                        }.onTapGesture {
-                            print("clicked")
-                            //show.toggle()
+                    // Our Content goes here
+                    CustomView(columns: $columns) {
+                        Image(tutorial.image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: columns.count == 1 ? 65 : width, height: columns.count == 1 ? 65 : width)
+                            .cornerRadius(15)
+                    } detail: {
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text(tutorial.name)
+                                .fontWeight(.heavy)
+                            
+                            Text(tutorial.keys)
+                                .font(.caption)
+                                .fontWeight(.heavy)
+                                .foregroundColor(.gray)
                         }
+                    }.onTapGesture {
+                        print("clicked")
+                        show.toggle()
+                        self.currentSelected = tutorial.slug
                     }
                 }
+            }
+            
+            NavigationLink(destination: GridDetailView(tut: self.currentSelected).navigationBarHidden(true), isActive: $show) {
             }
         }
     }

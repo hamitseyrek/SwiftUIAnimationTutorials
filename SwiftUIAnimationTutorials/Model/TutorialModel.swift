@@ -16,7 +16,7 @@ struct TutorialModel {
 
 var tutorials = [
     TutorialModel(name: "Wawes", slug: "wawes", keys: "Passenger", image: "hamit"),
-    TutorialModel(name: "Bad Blood", slug: "", keys: "Taylor Swift", image: "hamit"),
+    TutorialModel(name: "Gears and Belts", slug: "GearAndBeltsView", keys: "Taylor Swift", image: "hamit"),
     TutorialModel(name: "Believer", slug: "", keys: "Kurt Hugo Schneider", image: "hamit"),
     TutorialModel(name: "Let Me Love You", slug: "", keys: "DJ Snake", image: "hamit"),
     TutorialModel(name: "Shape Of You", slug: "", keys: "Ed Sherran", image: "hamit"),

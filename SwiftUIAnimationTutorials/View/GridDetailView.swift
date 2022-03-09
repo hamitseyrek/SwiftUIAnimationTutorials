@@ -15,7 +15,9 @@ struct GridDetailView: View {
     @State var loadView = true
     
     init(tut: String) {
-        print(tut)
+        guard let tutorial = tut as? UIView else {
+            return
+        }
     }
     
     
@@ -24,15 +26,15 @@ struct GridDetailView: View {
                 ZStack(alignment: Alignment(horizontal: .center, vertical: .top)) {
                     HeartAnimateView()
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 100)
-                    
                     if loadView {
                         HStack {
                             Button(action: {
-                                self.presentationMode.wrappedValue.dismiss()
                                 loadView.toggle()
                                 
                                 withAnimation(.spring()) {
                                     show.toggle()
+
+                                    self.presentationMode.wrappedValue.dismiss()
                                 }
                             }) {
                                 Image(systemName: "xmark")
