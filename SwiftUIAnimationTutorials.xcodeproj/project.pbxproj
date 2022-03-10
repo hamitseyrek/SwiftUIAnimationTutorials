@@ -65,7 +65,7 @@
 		5EE3D5A127C78E0800BCFDF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3D5A027C78E0800BCFDF8 /* ContentView.swift */; };
 		5EE3D5A327C78E0900BCFDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3D5A227C78E0900BCFDF8 /* Assets.xcassets */; };
 		5EE3D5A627C78E0900BCFDF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3D5A527C78E0900BCFDF8 /* Preview Assets.xcassets */; };
-		5EE3D5AE27C78E4E00BCFDF8 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3D5AD27C78E4E00BCFDF8 /* CircleView.swift */; };
+		5EE3D5AE27C78E4E00BCFDF8 /* CircleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3D5AD27C78E4E00BCFDF8 /* CircleAnimationView.swift */; };
 		5EF2840B27CB63A300901443 /* ParallaxEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2840A27CB63A300901443 /* ParallaxEffectView.swift */; };
 		5EF2840E27CB6D6F00901443 /* ElevatorAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2840D27CB6D6F00901443 /* ElevatorAppView.swift */; };
 		5EF2841127CB6DB700901443 /* elevatorChime.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5EF2840F27CB6DB700901443 /* elevatorChime.m4a */; };
@@ -134,7 +134,7 @@
 		5EE3D5A027C78E0800BCFDF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5EE3D5A227C78E0900BCFDF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EE3D5A527C78E0900BCFDF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5EE3D5AD27C78E4E00BCFDF8 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		5EE3D5AD27C78E4E00BCFDF8 /* CircleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAnimationView.swift; sourceTree = "<group>"; };
 		5EF2840A27CB63A300901443 /* ParallaxEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxEffectView.swift; sourceTree = "<group>"; };
 		5EF2840D27CB6D6F00901443 /* ElevatorAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorAppView.swift; sourceTree = "<group>"; };
 		5EF2840F27CB6DB700901443 /* elevatorChime.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = elevatorChime.m4a; sourceTree = "<group>"; };
@@ -403,7 +403,7 @@
 		5EE3D5AC27C78E1400BCFDF8 /* CircleAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				5EE3D5AD27C78E4E00BCFDF8 /* CircleView.swift */,
+				5EE3D5AD27C78E4E00BCFDF8 /* CircleAnimationView.swift */,
 			);
 			path = CircleAnimation;
 			sourceTree = "<group>";
@@ -558,7 +558,7 @@
 				5E1B798127D609DB00A9478D /* CarouselDetailView.swift in Sources */,
 				5E1B793927CFEF2400A9478D /* BuoyView.swift in Sources */,
 				5E41628727C802F5008B9352 /* RecordView.swift in Sources */,
-				5EE3D5AE27C78E4E00BCFDF8 /* CircleView.swift in Sources */,
+				5EE3D5AE27C78E4E00BCFDF8 /* CircleAnimationView.swift in Sources */,
 				5E1B794F27D2885300A9478D /* CirclesView.swift in Sources */,
 				5EF2841927CCD1F200901443 /* SwingingView.swift in Sources */,
 				5E1B794A27D2825200A9478D /* LightSwitchView.swift in Sources */,

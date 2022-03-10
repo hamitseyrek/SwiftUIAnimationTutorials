@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CircleView: View {
+struct CircleAnimationView: View {
     
     @State private var scaleInOut = false
     @State private var rotateInOut = false
@@ -69,6 +69,6 @@ struct CircleView: View {
 
 struct CircleView_Previews: PreviewProvider {
     static var previews: some View {
-        CircleView()
+        CircleAnimationView()
     }
 }

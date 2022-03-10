@@ -31,7 +31,7 @@ struct HeartAnimateView: View {
                     //MARK: - HEART IMAGE
                     Image("heart").resizable().aspectRatio(contentMode: .fit)
                         .frame(width: 175, alignment: .center)
-                        .position(x: (geo.size.width / 3.8), y: (geo.size.height / 7.8))
+                        .position(x: (geo.size.width / 4.0), y: (geo.size.height / 8.0))
                 }.position(x: (geo.size.width / 1.3), y: (geo.size.height / 1.2))
                     .onAppear() {
                         Timer.scheduledTimer(withTimeInterval: 0.15, repeats: true) { timer in
