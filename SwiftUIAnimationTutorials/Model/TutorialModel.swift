@@ -15,7 +15,6 @@ struct TutorialModel {
 }
 var view = AnyView(WawesView())
 var tutorials = [
-    TutorialModel(name: "Wawes", animationView: AnyView(WawesView()), keys: "Passenger", image: "WawesView"),
     TutorialModel(name: "Gears and Belts", animationView: AnyView(GearsAndBeltsView()), keys: "Taylor Swift", image: "GearsAndBeltsView"),
     TutorialModel(name: "Wifi Loading", animationView: AnyView(WifiLoadingView()), keys: "Kurt Hugo Schneider", image: "WifiLoadingView"),
     TutorialModel(name: "Light Switch", animationView: AnyView(LightSwitchView()), keys: "DJ Snake", image: "LightSwitchView"),
@@ -24,8 +23,10 @@ var tutorials = [
     TutorialModel(name: "Weather Graph Animation", animationView: AnyView(WeatherGraphAnimationView()), keys: "Camila Cabello", image: "WeatherGraphAnimationView"),
     TutorialModel(name: "Twinkling Stars", animationView: AnyView(TwinklingStarsView()), keys: "Taylor Swift", image: "TwinklingStarsView"),
     TutorialModel(name: "Swinging", animationView: AnyView(SwingingView()), keys: "J Balvin", image: "SwingingView"),
+    TutorialModel(name: "Slide Card", animationView: AnyView(SlideCardView()), keys: "Camila Cabello", image: "SlideCardView"),
     TutorialModel(name: "Elevator App", animationView: AnyView(ElevatorAppView()), keys: "Camila Cabello", image: "ElevatorAppView"),
     TutorialModel(name: "Parallax Effect", animationView: AnyView(ParallaxEffectView()), keys: "Lady Gaga", image: "ParallaxEffectView"),
+    TutorialModel(name: "Wawes", animationView: AnyView(WawesView()), keys: "Passenger", image: "WawesView"),
     TutorialModel(name: "Fly Present Dismiss Transition", animationView: AnyView(FlyPresentDismissTransitionView()), keys: "Kay Perry", image: "FlyPresentDismissTransitionView"),
     TutorialModel(name: "Huge Rotation", animationView: AnyView(HugeRotationView()), keys: "Maren Morris", image: "HugeRotationView"),
     TutorialModel(name: "Bubble SpriteKit", animationView: AnyView(BubbleSpriteKitView()), keys: "Katy Perry", image: "BubbleSpriteKitView"),

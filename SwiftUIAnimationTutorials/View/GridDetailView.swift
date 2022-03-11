@@ -53,8 +53,8 @@ struct GridDetailView: View {
                         .padding(.top, 35)
                         .padding(.horizontal)
                     }
-                }.background(Color.blue)
-        }.background(Color.black)
+                }
+        }.background(Color.offWhite)
     }
 }
 

@@ -9,13 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @State var goToHome = false
-    @StateObject var homeModel = CarouselViewModel()
     @State var filteredItems = tutorials
     
     var body: some View {
         ZStack {
             if goToHome {
-                CustomNavigationView(view: AnyView(HomeView(filteredItems: $filteredItems).environmentObject(homeModel)), placeHolder: "Apps, Animations", largeTitle: true, title: "Animations Catalog", onSearch: { txt in
+                CustomNavigationView(view: AnyView(HomeView(filteredItems: $filteredItems)), placeHolder: "Apps, Animations", largeTitle: true, title: "Animations Catalog", onSearch: { txt in
                             
                             // filtering Data
                             if txt != "" {

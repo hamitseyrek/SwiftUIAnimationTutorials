@@ -61,6 +61,7 @@
 		5EDC147227CA39B00080DA96 /* HugeRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC147127CA39B00080DA96 /* HugeRotationView.swift */; };
 		5EDC147527CABE860080DA96 /* FlyPresentDismissTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC147427CABE860080DA96 /* FlyPresentDismissTransitionView.swift */; };
 		5EDC147727CABF010080DA96 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC147627CABF010080DA96 /* SettingsView.swift */; };
+		5EE2B6C827DBE86E008BD2C5 /* SlideCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE2B6C727DBE86E008BD2C5 /* SlideCardView.swift */; };
 		5EE3D59F27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3D59E27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift */; };
 		5EE3D5A127C78E0800BCFDF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3D5A027C78E0800BCFDF8 /* ContentView.swift */; };
 		5EE3D5A327C78E0900BCFDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3D5A227C78E0900BCFDF8 /* Assets.xcassets */; };
@@ -129,6 +130,7 @@
 		5EDC147127CA39B00080DA96 /* HugeRotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeRotationView.swift; sourceTree = "<group>"; };
 		5EDC147427CABE860080DA96 /* FlyPresentDismissTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyPresentDismissTransitionView.swift; sourceTree = "<group>"; };
 		5EDC147627CABF010080DA96 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5EE2B6C727DBE86E008BD2C5 /* SlideCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCardView.swift; sourceTree = "<group>"; };
 		5EE3D59B27C78E0800BCFDF8 /* SwiftUIAnimationTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAnimationTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE3D59E27C78E0800BCFDF8 /* SwiftUIAnimationTutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationTutorialsApp.swift; sourceTree = "<group>"; };
 		5EE3D5A027C78E0800BCFDF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 		5E1B795427D28C7B00A9478D /* Tutorials */ = {
 			isa = PBXGroup;
 			children = (
+				5EE2B6C627DBE855008BD2C5 /* SlideCard */,
 				5E1B794B27D2853A00A9478D /* WifiLoading */,
 				5E1B794827D281F900A9478D /* LightSwitch */,
 				5E1B794327D144F600A9478D /* ExpandButton */,
@@ -266,7 +269,6 @@
 			isa = PBXGroup;
 			children = (
 				5E1B795A27D3846400A9478D /* BoardingScreen.swift */,
-				5E1B796E27D48C5A00A9478D /* CardModel.swift */,
 				5E1B797627D4C4AC00A9478D /* TutorialModel.swift */,
 			);
 			path = Model;
@@ -279,11 +281,8 @@
 				5E1B795527D371C700A9478D /* SplashScreenView.swift */,
 				5E1B795F27D387A000A9478D /* OffsetPageTabView.swift */,
 				5E1B796C27D48BA500A9478D /* HomeView.swift */,
-				5E1B797227D48CF400A9478D /* CardView.swift */,
 				5E1B797427D4BF1400A9478D /* CustomGridView.swift */,
-				5E1B797A27D4D18F00A9478D /* CustomCarouselView.swift */,
 				5E1B797C27D4D90400A9478D /* CustomNavigationView.swift */,
-				5E1B798027D609DB00A9478D /* CarouselDetailView.swift */,
 				5E1B798227D60C1500A9478D /* GridDetailView.swift */,
 			);
 			path = View;
@@ -292,7 +291,6 @@
 		5E1B796327D3E16B00A9478D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				5E1B797027D48CA200A9478D /* CarouselViewModel.swift */,
 				5E1B797827D4C60100A9478D /* CustomGridViewModel.swift */,
 			);
 			path = ViewModel;
@@ -358,6 +356,43 @@
 				5EDC147627CABF010080DA96 /* SettingsView.swift */,
 			);
 			path = FlyPresentDismissTransition;
+			sourceTree = "<group>";
+		};
+		5EE2B6C627DBE855008BD2C5 /* SlideCard */ = {
+			isa = PBXGroup;
+			children = (
+				5EE2B6CB27DBE8A1008BD2C5 /* Model */,
+				5EE2B6CA27DBE898008BD2C5 /* ViewModel */,
+				5EE2B6C927DBE891008BD2C5 /* View */,
+				5EE2B6C727DBE86E008BD2C5 /* SlideCardView.swift */,
+			);
+			path = SlideCard;
+			sourceTree = "<group>";
+		};
+		5EE2B6C927DBE891008BD2C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B797A27D4D18F00A9478D /* CustomCarouselView.swift */,
+				5E1B798027D609DB00A9478D /* CarouselDetailView.swift */,
+				5E1B797227D48CF400A9478D /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5EE2B6CA27DBE898008BD2C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B797027D48CA200A9478D /* CarouselViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5EE2B6CB27DBE8A1008BD2C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B796E27D48C5A00A9478D /* CardModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5EE3D59227C78E0800BCFDF8 = {
@@ -532,6 +567,7 @@
 				5EF2840E27CB6D6F00901443 /* ElevatorAppView.swift in Sources */,
 				5E1B793B27CFEF4700A9478D /* WaweView.swift in Sources */,
 				5E1B797B27D4D18F00A9478D /* CustomCarouselView.swift in Sources */,
+				5EE2B6C827DBE86E008BD2C5 /* SlideCardView.swift in Sources */,
 				5E1B797127D48CA200A9478D /* CarouselViewModel.swift in Sources */,
 				5E41629927C971D3008B9352 /* FlyingBirdView.swift in Sources */,
 				5E1B797D27D4D90400A9478D /* CustomNavigationView.swift in Sources */,
