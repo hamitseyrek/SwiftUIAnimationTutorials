@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CustomNavigationView: UIViewControllerRepresentable {
-    
+    @EnvironmentObject var gridModel: CustomGridViewModel
+
     // Just Change your view that requires Search Bar
     var view: AnyView
     
@@ -43,8 +44,13 @@ struct CustomNavigationView: UIViewControllerRepresentable {
         
         let controller = UINavigationController(rootViewController: childView)
         
+        let action = UIAction(title: "", image: UIImage(systemName: gridModel.columns.count == 1 ? "rectangle.grid.1x2": "square.grid.2x2")) { _ in
+            gridModel.changeGridView()
+        }
+        
         // Nav Bar Data
         controller.navigationBar.topItem?.title = title
+        controller.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(primaryAction: action)
         controller.navigationBar.prefersLargeTitles = largeTitle
         
         // SearchBar

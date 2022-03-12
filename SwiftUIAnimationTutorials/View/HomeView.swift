@@ -9,10 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     @Binding var filteredItems: [TutorialModel]
-    
+
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-                CustomGridView(filteredItems: $filteredItems)
+            CustomGridView(filteredItems: $filteredItems)
         }
         .background(
             Color.black.opacity(0.05)

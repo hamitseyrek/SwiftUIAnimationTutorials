@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct CustomGridView: View {
-    @StateObject var gridModel = CustomGridViewModel()
-    @State var columns = Array(repeating: GridItem(.flexible(), spacing: 15), count: 1)
+    @EnvironmentObject var gridModel: CustomGridViewModel
     @State var width = (UIScreen.main.bounds.width - 45) / 2
     
     // for search bar
@@ -17,39 +16,15 @@ struct CustomGridView: View {
     
     var body: some View {
         ScrollView {
-            HStack {
-                Text("Popular")
-                    .font(.title)
-                    .fontWeight(.bold)
-                
-                Spacer()
-                
-                Button(action: {
-                    // reducing to row
-                    withAnimation(.easeOut) {
-                        if columns.count == 2 {
-                            columns.removeLast()
-                        } else {
-                            columns.append(GridItem(.flexible(), spacing: 15))
-                        }
-                    }
-                }) {
-                    Image(systemName: columns.count == 1 ? "rectangle.grid.1x2": "square.grid.2x2")
-                        .font(.system(size: 24))
-                        .foregroundColor(.black)
-                }
-            }
-            .padding(.horizontal)
-            .padding(.top, 25)
-            LazyVGrid(columns: columns, spacing: 15) {
+            LazyVGrid(columns: gridModel.columns, spacing: 15) {
                 ForEach(filteredItems, id: \.name) { tutorial in
                     // Build Custom View using ViewBuilder
                     // Our Content goes here
-                    CustomView(columns: $columns) {
+                    CustomView(columns: $gridModel.columns) {
                         Image(tutorial.image)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: columns.count == 1 ? 65 : width, height: columns.count == 1 ? 65 : width)
+                            .frame(width: gridModel.columns.count == 1 ? 65 : width, height: gridModel.columns.count == 1 ? 65 : width)
                             .cornerRadius(15)
                     } detail: {
                         VStack(alignment: .leading, spacing: 10) {
@@ -68,7 +43,7 @@ struct CustomGridView: View {
                 }
             }
             NavigationLink(destination: GridDetailView().environmentObject(gridModel).navigationBarHidden(true), isActive: $gridModel.showTutorial) {}
-        }
+        }.padding(.top, 12)
     }
 }
 

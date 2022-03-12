@@ -10,11 +10,12 @@ import SwiftUI
 struct ContentView: View {
     @State var goToHome = false
     @State var filteredItems = tutorials
+    var gridModel = CustomGridViewModel()
     
     var body: some View {
         ZStack {
             if goToHome {
-                CustomNavigationView(view: AnyView(HomeView(filteredItems: $filteredItems)), placeHolder: "Apps, Animations", largeTitle: true, title: "App Catalog", onSearch: { txt in
+                CustomNavigationView(view: AnyView(HomeView(filteredItems: $filteredItems)), placeHolder: "Apps, Animations", largeTitle: true, title: "SwiftUI Apps", onSearch: { txt in
                             
                             // filtering Data
                             if txt != "" {
@@ -29,7 +30,7 @@ struct ContentView: View {
                             self.filteredItems = tutorials
                         })
                         .ignoresSafeArea()
-                
+                        .environmentObject(gridModel)
             } else {
                 OnBoarding()
             }
