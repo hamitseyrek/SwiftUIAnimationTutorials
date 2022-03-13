@@ -6,4 +6,7 @@
 
 Days | Topics                                                                                                                                                            | Info
 ---                                   | ---                                                                                                                                       |---
-**#[App 1](SwiftUIAnimationTutorials/Tutorials/GearsAndBelts)** | **Gears and Belts** <br/>(animation)                                         <br/>| ![screen1](readmeData/GearsAndBeltsView.png) ![gif1](readmeData/GearsAndBeltsView.gif) | 
+**#[App 1](SwiftUIAnimationTutorials/Tutorials/GearsAndBelts)** | **Gears and Belts** <br/>(animation)                                         <br/>| ![screen1](readmeData/GearsAndBeltsView.png) <img src="readmeData/GearsAndBeltsView.png" alt="drawing" style="width:200px;"/> ![gif1](readmeData/GearsAndBeltsView.gif) | 
+
+
+[Project 1](01-Project1) - *WeSplit* <br/>(with challenges)                                         <br/><sub> Form, Section, NavigationView, @State property wrapper, TextField, Picker, ForEach </sub> | ![screen1](01-Project1/screenshots/small/screen01.png) ![screen2](01-Project1/screenshots/small/screen02.png) |
