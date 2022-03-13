@@ -5,7 +5,7 @@
 
 
 App | Info                                                                                                                                                            | Screenshots                                                                                                                                                            | Gif
----                                   | ---                                                                                                                                       |---
+---                                   |--- | ---                                                                                                                                       |---
 **#[App 1](SwiftUIAnimationTutorials/Tutorials/GearsAndBelts)** | **Gears and Belts** <br/>(animation)                                         <br/>| <img src="readmeData/GearsAndBeltsView.png" alt="screen1" style="width:220px;"/> | <img src="readmeData/GearsAndBeltsView.gif" alt="gif1" style="width:220px;"/> | 
 
 
