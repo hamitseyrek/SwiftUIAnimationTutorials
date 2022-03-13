@@ -20,7 +20,7 @@ var tutorials = [
     TutorialModel(name: "Light Switch", animationView: AnyView(LightSwitchView()), keys: "{animation, light switch, change color...}", image: "LightSwitchView"),
     TutorialModel(name: "Expand Button", animationView: AnyView(ExpandButtonView()), keys: "{animation, expand, button...}", image: "ExpandButtonView"),
     TutorialModel(name: "Heart Animate", animationView: AnyView(HeartAnimateView()), keys: "{animation, heart, light line...}", image: "HeartAnimateView"),
-    TutorialModel(name: "Weather Graph", animationView: AnyView(WeatherGraphAnimationView()), keys: "{animation, weather, graph, sun, moon, toogle...}", image: "WeatherGraphAnimationView"),
+    TutorialModel(name: "Weather Graph", animationView: AnyView(WeatherGraphAnimationView()), keys: "{animation, weather, graph, sun, moon, toggle...}", image: "WeatherGraphAnimationView"),
     TutorialModel(name: "Twinkling Stars", animationView: AnyView(TwinklingStarsView()), keys: "{animation, twinkling starts, closer...}", image: "TwinklingStarsView"),
     TutorialModel(name: "Swinging", animationView: AnyView(SwingingView()), keys: "{animation, swinging...}", image: "SwingingView"),
     TutorialModel(name: "Slide Card", animationView: AnyView(SlideCardView()), keys: "{animation, slide card, expanded...}", image: "SlideCardView"),

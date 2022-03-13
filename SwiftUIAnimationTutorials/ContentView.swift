@@ -20,7 +20,7 @@ struct ContentView: View {
                             // filtering Data
                             if txt != "" {
                                 self.filteredItems = tutorials.filter{
-                                    $0.name.lowercased().contains(txt.lowercased())
+                                    $0.keys.lowercased().contains(txt.lowercased())
                                 }
                             } else {
                                 self.filteredItems = tutorials

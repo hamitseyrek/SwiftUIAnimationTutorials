@@ -10,11 +10,11 @@ import SwiftUI
 class CarouselViewModel: ObservableObject {
     
     @Published var cards = [
-        CardModel(cardColor: Color("blue"), title: "Neurobics for your mind"),
-        CardModel(cardColor: Color("purple"), title: "Brush up on hygine."),
-        CardModel(cardColor: Color("green"), title: "Don't skip breakfast."),
-        CardModel(cardColor: Color.yellow, title: "Brush up on hygine."),
-        CardModel(cardColor: Color.orange, title: "Neurobics for your mind."),
+        CardModel(cardColor: Color("purple"), title: "SwiftUI Apps"),
+        CardModel(cardColor: Color("blue"), title: "Codemvia Community"),
+        CardModel(cardColor: Color("green"), title: "Hamit Seyrek"),
+        CardModel(cardColor: Color.orange, title: "SwiftUI Apps"),
+        CardModel(cardColor: Color.yellow, title: "Codemvia Community"),
     ]
     
     @Published var swipedCard = 0
@@ -25,5 +25,5 @@ class CarouselViewModel: ObservableObject {
     
     @Published var showContent = false
     
-    var content = "Humans have long used cognitive enhancement methods to expand the proficiency and range of the various mental activities that they engage in, including writing to store and retrieve information, and computers that allow them to perform myriad activities that are now commonplace in the internet age. Neuroenhancement describes the use of neuroscience-based techniques for enhancing cognitive function by acting directly on the human brain and nervous system, altering its properties to increase performance. Cognitive neuroscience has now reached the point where it may begin to put theory derived from years of experimentation into practice. This special issue includes 16 articles that employ or examine a variety of neuroenhancement methods currently being developed to increase cognition in healthy people and in patients with neurological or psychiatric illness.This includes transcranial electromagnetic stimulation methods, such as transcranial direct current stimulation (tDCS) and transcranial magnetic stimulation (TMS), along with deep brain stimulation, neurofeedback, behavioral training techniques, and these and other techniques in conjunction with neuroimaging."
+    var content = "'SwiftUI Apps' application that made with SwiftUI, which includes many sample applications, was made by Hamit Seyrek, the founder of the CodemVia community that on a voluntary basis. SwiftUI App has been developed using O'Reilly Media, Kavsoft and many other internet resources."
 }
